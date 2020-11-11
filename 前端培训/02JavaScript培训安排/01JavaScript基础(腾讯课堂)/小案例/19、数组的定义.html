@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组的定义</title>
+	<script type="text/javascript">
+		//数组定义的第一种方式
+		//var 数组名=[具体的值];
+		var arr=[1,2,"abc",true,null,4.5];
+		//在js的数组中，也有length的属性，用于获取数组的长度
+		alert(arr.length);
+		//在Java中如果操作的下标超出长度会发生角标越界，在js中不存在
+		arr[10]=123.456;//表示下标为10
+		alert(arr.length);
+
+		//js中的数组也有下标，可以通过循环去遍历
+		for (var i = 0; i <arr.length; i++) {
+			document.write(arr[i]+",")
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

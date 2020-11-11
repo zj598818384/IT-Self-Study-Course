@@ -1,0 +1,8 @@
+一、以XML方式打开edmx文件，这个XML的文件主要包含两大部分：Runtime是类模型部分，Designer是VS中的图形界面
+
+二、重点讨论的是Runtime部分，又分为三大部分：
+(1)SSDL数据模型部分
+(2)CSDL概念模型部分
+(3)C-S Mapping映射规则部分
+
+三、根据映射关系和实体状态完成sql的生成

@@ -1,0 +1,38 @@
+﻿@model IQueryable<_008_增删改查操作_crud_.Models.getmoney>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            <tr>
+                <th>编号</th>
+                <th>银行</th>
+                <th>账号</th>
+                <th>付费人</th>
+                <th>修改</th>
+            </tr>
+            @foreach (var NewsInfo in Model)
+            {
+                <tr>
+                    <td>@NewsInfo.fid</td>
+                    <td>@NewsInfo.bank_deposit</td>
+                    <td>@NewsInfo.bank_account</td>
+                    <td>@NewsInfo.payee</td>
+                    <td>
+                        @Html.ActionLink("修改", "Edit", "NewsInfo", new RouteValueDictionary(new { id = NewsInfo.fid }), null)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

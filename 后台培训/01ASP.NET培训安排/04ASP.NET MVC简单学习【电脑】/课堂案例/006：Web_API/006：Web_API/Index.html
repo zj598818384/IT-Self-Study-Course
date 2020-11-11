@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+
+        });
+
+        function LoadList() {
+            $.ajax({
+                type: get,//请求方式，可以为Get，Post，Put，Delete
+                data: '{}',//发送的参数
+                url: 'http://localhost:2460/api/userinfo',//请求地址
+                contentType: "application/json;charset=utf-8",//数据类型
+                dataType: 'json',
+                success: function (list) {
+                    var list1 = $('#list');
+                    list1.empty();
+                    $.each(list, function (index, item) {
+                        list1.append('<tr><td>'+item.Id+'</td><td>'+item.Name+'</td></tr>')
+                    })
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>编号</th>
+            <th>名称</th>
+        </tr>
+        <tbody id="list">
+
+        </tbody>
+    </table>
+</body>
+</html>

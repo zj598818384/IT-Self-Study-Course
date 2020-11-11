@@ -1,0 +1,13 @@
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\StudentSys.Dal.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\StudentSys.Dal.pdb
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\obj\Debug\StudentSys.Dal.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\obj\Debug\StudentSys.Dal.pdb
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\EntityFramework.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\EntityFramework.SqlServer.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\StudentSys.Model.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\StudentSys.Model.pdb
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\EntityFramework.xml
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\EntityFramework.SqlServer.xml
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Dal\obj\Debug\StudentSys.Dal.csprojResolveAssemblyReference.cache

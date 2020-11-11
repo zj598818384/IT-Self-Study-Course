@@ -1,0 +1,12 @@
+一、新建空白解决方案
+二、创建model(模型)、bll(业务逻辑层)、dal(数据访问)层，删除默认class类
+三、创建MVC
+四、创建common类库文件：用于存放常用的工具类
+五、新建类，在model层中添加数据字段
+六、dal引用model
+七、在webconfig中添加数据连接字符串
+八、在dal层新建类，sqlhelper类，用于获取连接字符串
+private static readonly string connString = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
+需要引入using System.Configuration;命名空间
+然后编写增删改查
+九、新建控制器

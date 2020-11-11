@@ -1,0 +1,18 @@
+一、DropdownList选择项的确定
+1、如何判断用户的选择？
+(1)ddl_id.SelectedIndex：返回一个数值(0,1,2...)
+(2)ddl_id.SelectedValue：返回字符串value值
+(3)ddl_id.SelectedItem.Text：返回字符串(显示的文本内容)
+
+2、如何获取其他项的内容？
+(1)ddl_id.items[i].Text：下标为i项的text值
+(2)ddl_id.items[i].Value：下标为i项的Value值
+(3)ddl_id.Items[ddl_id.SelectedIndex].Text：选中的那一项的文本内容
+
+二、代码创建对象
+1、ListItem：控件(类)
+Boj.getType()：可以获取某个对象的类型
+
+2、创建一个类的代码写法：
+ListItem Obj_li;
+Obj_li=new ListItem();

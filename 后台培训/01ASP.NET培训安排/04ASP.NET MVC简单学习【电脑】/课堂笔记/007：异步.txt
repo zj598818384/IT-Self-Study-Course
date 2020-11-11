@@ -1,0 +1,9 @@
+方式1：使用jQuery的异步函数
+方法2：使用MVC的AjaxHelper：添加异步表单
+行为的返回值设置：
+(1)JsonResult对象，使用Json方法接收一个对象，在内部会完成对象的js序列化，向输出流中输出Json对象
+(2)注意：使用json方法时，默认只允许使用post请求，如果希望支持get方法进行异步请求，需要使用json方法的重载，设置第二个参数JsonRequestBehavior.AllowGet
+
+行为的返回值：
+(1)如果返回纯文件，使用Content("");
+(2)如果返回Json对象，使用Json(obj,..);

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "面向对象复习", "面向对象复习\面向对象复习.csproj", "{14A675EF-D1BE-4F45-8063-6D57F6A6CA96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "移动存储设备练习", "移动存储设备练习\移动存储设备练习.csproj", "{38196D27-495A-4846-AAF5-53853DA14A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "接口", "接口\接口.csproj", "{A38A7F88-2894-462E-BF86-F87E99C834C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "面向对象的练习", "面向对象的练习\面向对象的练习.csproj", "{B62924DC-BD2F-4B6B-98AB-FC766D6C1CE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14A675EF-D1BE-4F45-8063-6D57F6A6CA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A675EF-D1BE-4F45-8063-6D57F6A6CA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A675EF-D1BE-4F45-8063-6D57F6A6CA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A675EF-D1BE-4F45-8063-6D57F6A6CA96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38196D27-495A-4846-AAF5-53853DA14A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38196D27-495A-4846-AAF5-53853DA14A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38196D27-495A-4846-AAF5-53853DA14A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38196D27-495A-4846-AAF5-53853DA14A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38A7F88-2894-462E-BF86-F87E99C834C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38A7F88-2894-462E-BF86-F87E99C834C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38A7F88-2894-462E-BF86-F87E99C834C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38A7F88-2894-462E-BF86-F87E99C834C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62924DC-BD2F-4B6B-98AB-FC766D6C1CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62924DC-BD2F-4B6B-98AB-FC766D6C1CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62924DC-BD2F-4B6B-98AB-FC766D6C1CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62924DC-BD2F-4B6B-98AB-FC766D6C1CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

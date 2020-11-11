@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SelectionDriection</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function AD(){
+			var control=document.forms[0]['text'];
+			var Direction=control.selectionDirection;
+			alert(Direction);
+		}
+	</script>
+	<form>
+		<input type="text" name="text">
+		<input type="button" value="点击我" onclick="AD()">
+	</form>
+</body>
+</html>

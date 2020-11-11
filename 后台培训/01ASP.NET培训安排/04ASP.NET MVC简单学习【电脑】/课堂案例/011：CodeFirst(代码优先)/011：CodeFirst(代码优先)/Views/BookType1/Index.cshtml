@@ -1,0 +1,32 @@
+﻿@*@model IQueryable<_011_CodeFirst_代码优先_.Models.BookType1>*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            <tr>
+                <th>编号</th>
+                <th>标题</th>
+            </tr>
+            @foreach (var booktype in Model)
+            {
+                <tr>
+                    <td>@booktype.TypeID</td>
+                    <td>@booktype.TypeTitle</td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+</body>
+</html>

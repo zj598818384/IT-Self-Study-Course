@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch-case结构", "switch-case结构\switch-case结构.csproj", "{0F288CE4-ABDC-4D09-932C-B6258C5A5791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch-case结构练习", "switch-case结构练习\switch-case结构练习.csproj", "{54566648-816D-4460-87C1-B11F8E0F6D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "for循环的正序输出和倒序输出", "for循环的正序输出和倒序输出\for循环的正序输出和倒序输出.csproj", "{0DBCAD25-5C44-475A-BDE2-1FB3364C4957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F288CE4-ABDC-4D09-932C-B6258C5A5791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F288CE4-ABDC-4D09-932C-B6258C5A5791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F288CE4-ABDC-4D09-932C-B6258C5A5791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F288CE4-ABDC-4D09-932C-B6258C5A5791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54566648-816D-4460-87C1-B11F8E0F6D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54566648-816D-4460-87C1-B11F8E0F6D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54566648-816D-4460-87C1-B11F8E0F6D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54566648-816D-4460-87C1-B11F8E0F6D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBCAD25-5C44-475A-BDE2-1FB3364C4957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBCAD25-5C44-475A-BDE2-1FB3364C4957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBCAD25-5C44-475A-BDE2-1FB3364C4957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBCAD25-5C44-475A-BDE2-1FB3364C4957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+一、document对象的方法
+(1)getElementsByName()：返回带有指定名称的对象集合。
+(2)getElementsByTagName()：返回带有指定标签名的对象集合。
+(3)getElementById()：返回对拥有指定id的第一个对象的引用。

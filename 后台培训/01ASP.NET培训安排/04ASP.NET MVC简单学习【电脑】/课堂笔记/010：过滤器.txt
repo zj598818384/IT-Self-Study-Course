@@ -1,0 +1,47 @@
+一、过滤器类型
+1、authorization：身份验证过滤器
+接口：IAuthorzationFilter
+默认实现:AuthorizeAttribute
+描述：首先原型，在其他过滤器的操作方法
+
+2、action：行为过滤器
+接口：IActionFilter
+默认实现：ActionFilterAtribute
+运行之前和之后的动作方法
+
+3、result：结果过滤器
+接口：IResultFilter
+默认实现：ActionFilterAttribute
+运行前后执行的操作结果
+
+4、exception：异常过滤器
+接口：IExceptionFilter
+默认实现：HandleReeorAttribute
+如果只运行另一个过滤器，操作方法，或行动结果抛出一个异常
+
+二、使用方法
+1、自定义类继承自相应的类或接口，重写方法，作为特性使用
+2、在控制器类中重写方法
+
+三、特性方法的使用
+1、注意：如果继承自接口需要让类实现FilterAttribute，才可以作为特性使用
+2、使用方法1：作为Controller或Action的特性
+3、使用方法2：在Global中注册为全局过滤器，应用于所有的Controller的Action
+4、参数类均继承自ControllerContext，主要包含属性请求上下文、路由数据、结果
+
+四、身份验证过滤器
+1、在约束的Action执行前执行
+2、重写OnAuthorization方法
+3、如果不想使用默认的身份验证方式，需要将base.***删除
+4、如果想进行跳转，需要设置上下文对象的Result属性为new RedirectResult(string url)
+
+五、异常处理过滤器
+1、当发生异常时，用于进行自定义异步处理，如记录日志，跳转页面
+2、使用自定义异常处理，需要在web.config中system.web添加<austomErrors mode="On"/>节点
+3、重写OnException方法，不需要禁用base.***
+4、如果想进行跳转，需要设置上下文对象的Result属性为new RedirectResult(string url)
+
+六、行为过滤器
+1、在行为被执行前，后执行的过滤器
+2、重写方法OnActionExecuting(行为执行前)
+3、重写方法OnActionExecuted(行为执行后)

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建一个类</title>
+    <script type="text/javascript">
+        //1.创建类class创建一个明星类
+        class star{
+            //写一个函数
+            //在类里面所有的函数不需要加function
+            //类的共用属性放到constructor里面
+            constructor(name){
+                this.name=name;
+            }
+            //写一个唱歌的共有方法
+            sing(song){
+                //console.log('我唱歌');
+                console.log(this.name+song);
+            }
+        }
+
+        //2.利用类创建对象new
+        //只要加了new那么就自动调用constructor这个函数
+        var ldh=new star('刘德华');
+        console.log(ldh.name);
+        //(1)我们类里面所有的函数不需要写function
+        //(2)多个函数方法之间不需要添加逗号分隔
+
+        //直接调用函数
+        //ldh.sing();
+        //调用函数并传参
+        ldh.sing('冰雨');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

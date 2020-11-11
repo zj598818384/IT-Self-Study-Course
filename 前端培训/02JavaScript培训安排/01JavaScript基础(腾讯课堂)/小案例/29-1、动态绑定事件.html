@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态绑定事件</title>
+	<script type="text/javascript">
+		//动态事件，一定要保证是在页面加载完成之后
+		window.onload=function(){
+			//在onload对应的函数中的代码，都会在页面加载完成之后触发执行
+			var divs=document.getElementsByTagName('div');
+			//鼠标移入事件
+			divs[0].onmouseenter=function(){
+				//在动态绑定的函数中可以通过this来表示当前发生的事件的这个标签对象
+				this.style.backgroundColor="green";
+			}
+
+			//鼠标移出事件
+			divs[0].onmouseout=function(){
+				this.style.backgroundColor="red";
+			}
+		}
+
+		//注意：如果定义的有名称的函数，直接写js的script标签内部即可
+		function demo(){}
+	</script>
+	<style type="text/css">
+		div{
+			width:150px;
+			height:150px;
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div onmouseleave="demo()"></div>
+</body>
+</html>

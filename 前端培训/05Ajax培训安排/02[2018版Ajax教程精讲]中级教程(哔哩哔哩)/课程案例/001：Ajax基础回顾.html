@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax基础回顾</title>
+	<script type="text/javascript">
+		var xhr=new XMLHttpRequest()
+		xhr.open('get','test.php')
+		xhr.send()
+		xhr.onreadystatechange=function(){
+			if(this.readyState!=4) return
+			console.log(this)
+		}
+
+
+		//一、遵循HTTP的请求
+		//1、设置请求报文的请求行
+		xhr.open('get','./time.php')
+		//2、设置请求头
+		xhr.serRequestHeader('Accept','text/plain')
+		//3、设置请求体
+		xhr.send(null)
+		xhr.onreadystatechange=function(){
+			if(this.readyState===4){
+				//获取响应状态码
+				console.log(this.status)
+				//获取响应状态描述
+				console.log(this.statusText)
+				//获取响应头信息
+				console.log(this.getResponseHeader('Content-Type'))//指定响应头
+				console.log(this.getAllResponseHeaeder())//全部响应头
+				//获取响应体
+				console.log(this.responseText)//文本形式
+				console.log(this.responseXML)//XML形式，了解即可不用
+			}
+		}
+
+		// 二、get请求
+		var xhr=new XMLHttpRequest()
+		//get请求传递参数通常使用的是问号传参
+		//这里可以在请求地址后面加上参数，从而传递数据到服务端
+		xhr.open('get','./delete.php?id=1')
+		//一般在get请求时无需设置响应体，可以传null或者干脆不传
+		xhr.send(null)
+		xhr.onreadystatechange=function(){
+			if(this.readyState===4){
+				console.log(this.responseText)
+			}
+		}	
+
+		// 三、post请求
+		var xhr=new XMLHttpRequest()
+		//open方法的第一个参数的作用是设置请求的method
+		xhr.open('post','./add.php')
+		//设置请求头中的Content-Type为application/x-www-form-urlencoded
+		//标识此次请求的请求体格式为urlencoded以便于服务端收数据
+		xhr.serRequestHeader('Conetent-Type','application/x-www-form-urlencoded')
+		//需要提交到服务端的数据可以通过send方法的参数传递
+		//格式：key1=value&&key2=value2
+		xhr.send('key1=value&&key2=value2')
+		xhr.onreadystatechange=function(){
+			if(this.readyState===4){
+				console.log(this.responseText)
+			}
+		}
+
+		// 四、xhr.open()方法第三个参数要求传入的是一个bool值，其作用就是设置此
+		// 次请求是否采用异步方法执行，默认为true，如果需要同步执行可以通过传递
+		// false实现：
+		// 第三个参数为true：
+		consol.log('before ajax')
+		var xhr=new XMLHttpRequest()
+		//默认第三个参数为true意味着采用异步方法执行
+		xhr.open('get','./time.php',true)
+		xhr.send(null)
+		xhr.onreadystatechange=function(){
+			if(this.readyState===4){
+				//这里的代码最后执行
+				console.log('requset done')
+			}
+		}
+		console.log('after ajax')
+
+		//如果采用同步方法执行，则代码会卡死在xhr.send()这一步：
+		//第三个参数为false
+		console.log('before ajax')
+		var xhr=new XMLHttpRequest()
+		//同步方法
+		xhr.open('get','./time.php',false)
+		// //同步方法执行啊需要先注册事件再调用send否则readystatechange无法触发
+		// //如果采用同步的方法执行，则不需要写方法直接在在后面写console.log(xhr.responseText)
+		// xhr.onreadystatechange=function(){
+		// 	if(this.readyState===4){
+		// 		//这里的代码最后执行
+		// 		console.log('request done')
+		// 	}
+		// }
+		xhr.send(null)
+		//因为send方法执行完成，响应已经下载完成
+		console.log(xhr.responseText)
+		console.log('after ajax')
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

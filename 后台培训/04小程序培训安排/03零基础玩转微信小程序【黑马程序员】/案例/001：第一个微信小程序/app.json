@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/使用less/使用less",
+    "pages/demo01/demo01",
+    "pages/demo04/demo04",
+    "pages/demo02/demo02",
+    "pages/index/index",
+    "pages/img/img",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "我的应用",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"yellow"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/iconfont-home.png",
+      "selectedIconPath": "icon/iconfont-home-active.png"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "社区",
+        "iconPath": "icon/iconfont-home.png",
+        "selectedIconPath": "icon/iconfont-home-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "分类",
+        "iconPath": "icon/iconfont-home.png",
+        "selectedIconPath": "icon/iconfont-home-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "个人中心",
+        "iconPath": "icon/iconfont-home.png",
+        "selectedIconPath": "icon/iconfont-home-active.png"
+      }
+    ],
+    "color":"#0094ff",
+    "selectedColor": "#ff9400"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

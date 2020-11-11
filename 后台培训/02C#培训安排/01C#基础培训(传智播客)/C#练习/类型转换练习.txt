@@ -1,0 +1,28 @@
+【练习一】
+1、让用户输入姓名、语文、数学、英语三门科的成绩，然后给用户显示：xx,你的总成绩为xx分，平均成绩为xx分。
+
+console.writeline("请输入你的姓名：");
+string name=console.readline();
+console.writeline("请输入你的语文成绩：");
+string strChinese=console.readline();
+console.writeline("请输入你的数学成绩：");
+string strMath=console.readline();
+console.writeline("请输入你的英语成绩：");
+string strEnglish=console.readline(); 
+
+//声明double类型的变量来接受成绩
+double chinese=convert.todouble(strChinese);
+double math=convert.todouble(strMath);
+double english=convert.todouble(strEnglish);
+double sumScore=chinese+math+english;
+double avg=(int)sumScore/3;//将double类型转换成int类型
+console.writeline("{0}你的总成绩是{1}平均成绩是{2:0.00}",name,sunScore,avg);//:0.00为保留几位小数
+
+//由于字符串去相加的话，最终会变成相连接，如果要拿字符串类型的变量参与
+//计算需要将字符串转换成int或者double类型。
+
+//声明int类型的变量来接受成绩
+int chinese=convert.ToInt32(strChinese);
+int math=convert.ToInt32(strMath);
+int english=convert.ToInt32(strEnglish);
+console.writeline("{0}你的总成绩是{1}，平均成绩是{2}",name,chinese+math+english,(chinese+math+english)/3);

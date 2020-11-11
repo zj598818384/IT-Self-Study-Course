@@ -1,0 +1,14 @@
+﻿@* 声明传过来的数据类型 *@
+@* 加上model变成强类型视图 *@
+@* model里面的数据类型一定要和view方法参数里面的model类型一致 *@
+@model _02_控制器.Models.Student
+@{
+    ViewBag.Title = "ShowData";
+}
+
+<h2>ShowData</h2>
+
+@* 获取参数的数据 *@
+@Model.Id
+@Model.Name
+@Model.Age

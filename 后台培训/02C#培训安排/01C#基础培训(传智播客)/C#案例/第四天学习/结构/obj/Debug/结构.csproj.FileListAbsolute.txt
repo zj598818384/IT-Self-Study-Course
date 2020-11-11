@@ -1,0 +1,2 @@
+D:\专业学习\C#\C#示例\第四天学习\结构\bin\Debug\结构.exe.config
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第四天学习\结构\bin\Debug\结构.exe.config

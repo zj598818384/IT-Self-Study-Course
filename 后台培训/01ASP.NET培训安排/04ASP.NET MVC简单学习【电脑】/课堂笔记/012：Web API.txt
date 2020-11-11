@@ -1,0 +1,54 @@
+一、Web API
+1、两种web服务
+(1)SOPA风格：基于方法，产品是WebService，使用方法进行请求
+(2)REST风格：基于资源，产品是WebAPI，使用资源进行请求
+2、可以返回json、xml类型的数据
+3、对于数据的增、删、改、查，提供相对的资源操作。按照请求的类型进行相应处理，主要包括Get(查)、Post(增)、Put(改)、Delete(删)。这些都是http协议支持的请求方式
+4、请求方式：根据路由规则请求
+
+5、在APIController中定义crud的方法，名称可以自定义，如果对应相应的资源操作，可以使用特性约束
+6、主要的特性包括
+(1)HttpGet
+(2)HttpPost
+(3)HttpPut
+(4)HttpDelete
+
+二、API的调用
+方法一：jQuery的ajax
+1、指定请求的数据类型：contentType:"application/json;charset=utf-8",//数据类型
+2、主要的属性：
+(1)type：请求方式，包括Get、Post、Put、Delete
+(2)url：请求资源，根据路由规则编写
+(3)data：请求数据，为json格式
+(4)contentType：请求数据的类型及编码
+(5)dataType：返回的数据类型，可以是text、json
+(6)success：成功处理的回调函数
+3、注意：使用js的异步操作，不可以跨域访问，只适用于本地操作
+
+方法二：使用HttpClient对象请求
+1、创建并初始化对象：
+client.BaseAddress=new Url(url);
+client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+2、读集合：
+HttpResponseMessage=client.GetAsync(url).Result;
+var userList=response.Content.ReadAsAsync<Ienumerable<数据类型>>().Result;
+
+3、更具编号读对象：
+HttpResponseMessage1=client.GetAsync(url).Result;
+var userInfo=response1.Content.ReadAsAsync<数据类型>().Result;
+
+4、增加：
+HttpResponseMessage response=client.PostAsJsonAsync("api/userinfo",userInfo).Result;
+使用response.IsSuccessStatusCode帕努单是否成功
+使用response.Content.ToString()获取返回值
+
+5、修改：
+HttpResponseMessage response=client.PutAsJsonAsync("api/userinfo/"+userInfo.UserId,userInfo).Result;
+使用response.IsSuccessStatusCode判断是否成功
+使用response.Content.ToString()获取返回值
+
+6、删除：
+HttpResponseMessage response=client.DeleteAsync("api/userinfo/"+uid).Result;
+使用response.IsSuccessStatusCode判断是否成功
+使用response.Content.ToString()获取返回值

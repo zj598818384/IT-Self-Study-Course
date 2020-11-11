@@ -1,0 +1,18 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\bin\Debug\游戏石头剪刀布.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\bin\Debug\游戏石头剪刀布.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\bin\Debug\游戏石头剪刀布.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.pdb
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\bin\Debug\游戏石头剪刀布.exe.config
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.exe
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.pdb
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\bin\Debug\游戏石头剪刀布.exe
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\bin\Debug\游戏石头剪刀布.pdb
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.csprojResolveAssemblyReference.cache
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.Form1.resources
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.Properties.Resources.resources
+E:\后台培训\03winform培训安排\01winform基础培训(传智播客)\小案例\项目十四：游戏石头剪刀布\游戏石头剪刀布\obj\Debug\游戏石头剪刀布.csproj.GenerateResource.Cache

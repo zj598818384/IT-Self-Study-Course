@@ -1,0 +1,30 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+
+#div1{
+    width:700px;
+    height:500px;
+    border:1px solid red;
+    margin:0 auto;
+}
+
+#lbl_title{
+    font-size:20px;
+    width:600px;
+    height:35px;
+    border:1px solid red;
+    line-height:35px;
+    text-align:center;
+    display:block;
+    margin:0 auto;
+}
+
+#lbl_name{
+    width:500px;
+    height:40px;
+    border:1px solid red;
+    margin:0 auto;
+
+}

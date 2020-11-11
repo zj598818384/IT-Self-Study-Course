@@ -1,0 +1,60 @@
+【练习一】
+1、循环录入5个人的年龄并计算平均年龄，如果录入的数据出现负数或大于100的数，立即停止输入并报错。
+int sum=0;
+bool bo=true;
+for(int i=0;i<5;i++)
+{
+     console.writeline("请输入第{0}个人的年龄：",i+1);
+     try
+     {
+            int age=int.parse(console.readline());
+            if(age>=0&&age<=100)
+            {
+                   sum+=age;
+            }
+            else
+            {
+                 console.writeline(输入的年龄不在正确范围之内，程序退出!!!);
+                 bo=false;
+                 break;
+            }
+      }
+      catch
+      {
+            console.wirteline("输入的年龄不正确，程序退出!!!");
+            bo=false;
+            break;
+      }
+}
+if(bo)
+{
+       console.writeline("5个人的平均年龄是{0}",sum/5);
+}
+console.readkey();
+
+【练习二】
+2、1~100之间的整数相加，得到累加值大于20的当前数(比如:1+2+3+4+5+6=21)结果6。
+int sum=0;
+for(int i=1;i<=100;i++)
+{
+     sum+=i;
+     if(sum>=20)
+     {
+           console.writeline("加到{0}的时候，总和大于了20",i);
+           break;
+     }
+}
+console.readkey();
+
+
+
+
+
+
+
+
+
+
+
+
+

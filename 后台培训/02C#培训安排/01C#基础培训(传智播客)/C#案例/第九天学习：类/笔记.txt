@@ -1,0 +1,7 @@
+1、Dirextory操作文件夹
+CreateDirectory：创建文件夹
+Delete：删除文件夹
+Move：剪切文件夹
+Exist：判断是否存在
+GetFiles：获得指定的目录下所有文件的全路径
+GetDirectory：获得指定目录下所有文件夹的全路径

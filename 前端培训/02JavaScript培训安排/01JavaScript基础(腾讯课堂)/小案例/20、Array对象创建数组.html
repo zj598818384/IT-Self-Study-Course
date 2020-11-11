@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array对象创建数组</title>
+</head>
+<body>
+	
+</body>
+	<script type="text/javascript">
+		/*数组的第二种定义方式：
+		在js中有一个Array的对象，利用它可以定义数组
+		格式：
+		var 数组名=new Array(参数);
+		 */
+		var arr=new Array(1,2,3,4,5,6.1);//有多个数，表示数组元素
+		alert(arr.length);
+		var arr2=new Array(10);//只有一个整数，表示数组长度
+		// alert(arr2.length);
+		// Array中提供的join方法，是将数组转换成字符串的时候，使用join中的参数作为数组中元素
+		// 之间的分隔符
+		document.write(arr.join("===="));
+	</script>
+</html>

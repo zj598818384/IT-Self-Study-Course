@@ -1,0 +1,5 @@
+install-package entityframework   下载EF框架
+需要将表创建好，连接字符串也需要写好
+enable-migrations      启动迁移
+add-migration '名称'   添加迁移
+update-database   更新数据库，数据库已添加成功

@@ -1,0 +1,13 @@
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\BookSystem.IDAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\BookSystem.IDAL.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\BookSystem.Models.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\EntityFramework.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\EntityFramework.SqlServer.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\BookSystem.Models.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\EntityFramework.xml
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\EntityFramework.SqlServer.xml
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\obj\Debug\BookSystem.IDAL.csprojResolveAssemblyReference.cache
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\obj\Debug\BookSystem.IDAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\IDLL\obj\Debug\BookSystem.IDAL.pdb

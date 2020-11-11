@@ -1,0 +1,9 @@
+E:\专业学习\自学  C#\C#示例\练习一\练习08\bin\Debug\练习08.exe.config
+E:\专业学习\自学  C#\C#示例\练习一\练习08\bin\Debug\练习08.exe
+E:\专业学习\自学  C#\C#示例\练习一\练习08\bin\Debug\练习08.pdb
+E:\专业学习\自学  C#\C#示例\练习一\练习08\obj\Debug\练习08.csprojResolveAssemblyReference.cache
+E:\专业学习\自学  C#\C#示例\练习一\练习08\obj\Debug\练习08.exe
+E:\专业学习\自学  C#\C#示例\练习一\练习08\obj\Debug\练习08.pdb
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\练习一\练习08\bin\Debug\练习08.exe.config
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\练习一\练习08\obj\Debug\练习08.exe
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\练习一\练习08\obj\Debug\练习08.pdb

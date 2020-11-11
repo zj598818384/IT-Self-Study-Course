@@ -1,0 +1,9 @@
+一、foreach循环的形式
+foreach(自变量a in 集合b)
+{
+	操作每一个a
+}
+要点：
+1、自变量a是某种类型的变量(int,double,string,char,textbox,label,control...)
+2、集合b是一组变量，但必须确保a和b的类型相同
+3、a在循环体中可以被调用，但不可以被赋值和改动

@@ -1,0 +1,9 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\bin\Debug\进度条的实际操作.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\bin\Debug\进度条的实际操作.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\bin\Debug\进度条的实际操作.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\obj\Debug\进度条的实际操作.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\obj\Debug\进度条的实际操作.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\obj\Debug\进度条的实际操作.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\obj\Debug\进度条的实际操作.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\obj\Debug\进度条的实际操作.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目二十：进度条的实际操作\进度条的实际操作\obj\Debug\进度条的实际操作.pdb

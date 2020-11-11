@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数的第三种定义方式</title>
+	<script type="text/javascript">
+		function(x,y){
+			return x+y;
+		}//这种写法无函数名，所以无法进行调用
+		//下面的代码相当于个函数整体赋值给变量d那么这个d就变成了函数名
+		var d=function(x,y){
+			return x+y;
+		}
+		var sum=d(1,4);
+		alert(sum);
+		//定义一个变量d在让变量d来调用函数进行传参
+		
+		//由于在js中可以将一个函数赋值给其他的变量，那么其他的变量就变成当前这个函数的函数名了，经常会出现将一个函数赋值给多个不同的变量，导致一个函数可以通过多个函数名调用
+		
+		function demo(){
+			document.write("xxxx");
+		}
+		//将函数的返回值赋值给变量dd
+		var dd=demo();
+		alert(dd);
+		//将demo函数赋值给变量dd2，这时dd2和demo都是函数的函数名了
+		var dd2=demo;
+		demo();
+		dd2();
+		alert(dd2);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

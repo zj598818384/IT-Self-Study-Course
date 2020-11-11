@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组练习</title>
+	<script type="text/javascript">
+		//在Java学习中有foreach语句可以快速遍历
+		//for(容器中元素的类型 变量名:容器名){
+		//     变量名中存放的是容器中取出的数据
+		//}
+		//
+		//在js中也有类似foreach的循环，for in语句
+		//for in语句的格式：
+		//for(var i in 数组名){
+		//     如果遍历的是数组，变量名i中存放的是数组的下标
+		//}
+		//数组练习
+		//1、打印数组
+		function printArray(arr){
+			//遍历打印
+			for (var i = 0; i < arr.length; i++) {
+				document.write(arr[i]+"&nbsp;&nbsp;");
+			}
+		}
+		var arr=[11,22,33,44,"abc",4.5];
+		printArray(arr);//打印到屏幕
+
+		//2、求数组中最大值
+		//在js中计算最值和排序等问题的时候，数组中的数据类型要统一，不能什么类型都写
+		function getArrayMax(arr){
+			var max=arr[0];
+			for(var i in arr){
+				if (max<arr[i]) {
+					max=arr[i];
+				}
+				
+			}
+			return max;
+		}
+
+		/*
+		 *排序
+		 */
+		function selectSort(arr)
+		{
+			for (var i = 0; i < arr.length-1; i++) 
+			{
+				for (var j = i+1; j < arr.length; j++) 
+				{
+					if (arr[i]>arr[j]) 
+					{
+						var temp=arr[i];
+						arr[i]=arr[j];
+						arr[j]=temp;
+					}
+				}
+			}
+		}
+		
+		var arr=[11,22,33,44,"abc",4.5];
+		printArray(arr);
+		var max=getArrayMax(arr);
+		alert(max);
+		selectSort(arr);
+		printArray(arr);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

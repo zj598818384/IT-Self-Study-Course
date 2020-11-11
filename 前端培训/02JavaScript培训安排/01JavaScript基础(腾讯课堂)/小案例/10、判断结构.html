@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>判断结构</title>
+	<script type="text/javascript">
+		//js中的判断结构
+		//
+		//判断奇偶数
+		var a=11;
+		//在Java中判断奇偶数是这样写的但是在js中也可以这样写
+		if(a%2==0)
+		{
+			alert("偶数");
+		}
+		if(a%2==1)
+		{
+			alert("奇数");
+		}
+		//不过一般是这样写的
+		if(a%2)
+		{
+			alert("奇数");
+		}
+		else
+		{
+			alert("偶数");
+		}
+
+		//判断季节
+		var month=5;
+		if(month>=2&&month<=4)
+		{
+            alert("春季");
+		}
+		else if(month>4&&month<=7)
+		{
+            alert("夏季");
+		}
+		else if(month>=8&&month<=10)
+		{
+			alert("秋季");
+		}
+		else if(month>=11&&month<=12||month==1)
+		{
+			alert("冬季");
+		}
+		else
+		{
+			alert("月份有误！！！");
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

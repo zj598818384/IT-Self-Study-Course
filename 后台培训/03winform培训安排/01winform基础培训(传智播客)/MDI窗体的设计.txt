@@ -1,0 +1,5 @@
+【MDI窗体的设计】
+1、首先确定一个父窗体。将IsMdiContainer设置为true。
+2、床架子窗体，并且设置他们的父窗体。
+
+【PictureBox】

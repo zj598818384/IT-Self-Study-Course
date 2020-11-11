@@ -1,0 +1,45 @@
+﻿@* 强类型页面 *@
+@* 一个页面只能定义一个强类型 *@
+@* 如果希望一个页面操作两个强类型的方法：进行封装   *@
+@model _002_DropDownList集合.Models.Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HtmlTest</title>
+</head>
+<body>
+    <div> 
+        @ViewBag.dllist
+         {
+            @*绑定下拉列表*@
+            @Html.DropDownList("ddlist")
+        }
+        <br />
+        @using (Html.BeginForm("Show1", "Drop", FormMethod.Post))
+        {
+            //参数：是person类型，使用for系列的方法中的形参的类型就是你定义什么类型就是什么类型，像这里是person类型
+            //c：类型
+            @Html.TextBoxFor(c=>c.QQ)
+        }
+        @*@ViewData.Model.QQ*@
+        <hr />
+        <a href="@Url.Action("Add","Drop")?id=1">添加1</a>
+        <br />
+        @using (Html.BeginForm("Add", "Drop", FormMethod.Post))
+        {
+             @Html.TextBox("id")
+            <br />
+            <input  type="submit"/>
+        }
+
+
+
+    </div>
+</body>
+</html>

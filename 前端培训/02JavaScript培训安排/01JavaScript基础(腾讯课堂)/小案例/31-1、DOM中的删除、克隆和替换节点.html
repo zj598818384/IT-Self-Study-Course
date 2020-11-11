@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM删除、克隆和替换节点</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//删除
+			//给按钮绑定单击事件
+			document.getElementById('btn1').onclick=function(){
+				//获取到需要被删除的div
+				var div1=document.getElementById('div1');
+				//删除页面上的标签，需要通过父标签来删除
+				//parentNode：获取父标签
+				div1.parentNode.removeChild(div1);
+			}
+
+			//替换
+			//replaceChild：替换
+			document.getElementById('btn2').onclick=function(){
+				//替换标签也必须通过父标签来替换
+				//原始的替换的标签
+				var div2=document.getElementById('div2');
+				//被替换的标签
+				var div3=document.getElementById('div3');
+				div2.parentNode.replaceChild(div2,div3);
+			}
+
+			//克隆+替换
+			document.getElementById('btn3').onclick=function(){
+				//原始克隆的标签
+				var div2=document.getElementById('div2');
+				//克隆出来的div3
+				//cloneNode(true):加true他会将需要克隆的标签的里面的内容全部克隆过去，如果不加true的话只是单独的克隆他一个标签
+				var cloneDiv2=div2.cloneNode(true);
+
+				//原始克隆的标签
+				var div3=document.getElementById('div3');
+				//克隆出来的div3
+				div2.parentNode.replaceChild(cloneDiv2,div3);
+			}
+		}
+
+	</script>
+	<style type="text/css">
+		.div1{
+			width:100px;
+			height:100px;
+			background:#0094FF;
+			text-align: center;
+			line-height:100px;
+		}
+		.div2{
+			width:100px;
+			height:100px;
+			background:#FF00F3;
+			text-align: center;
+			line-height:100px;
+		}
+		.div3{
+			width:100px;
+			height:100px;
+			background:#FF8600;
+			text-align: center;
+			line-height:100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1" id="div1">1</div>
+	<div class="div2" id="div2">2</div>
+	<div class="div3" id="div3">3</div>
+
+	<button id="btn1">删除id为div1的div</button>
+	<button id="btn2">使用id为div2的div替换id为div3的div</button>
+	<button id="btn3">克隆</button>
+</body>
+</html>

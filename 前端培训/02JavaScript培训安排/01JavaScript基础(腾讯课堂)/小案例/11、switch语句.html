@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>switch语句</title>
+	<script type="text/javascript">
+		//switch结构:
+		var score=98;
+		//在js中数字不分整数和小数。所有的数字都是number
+		//如果两个整数在js中进行除法运算，结果有可能就是小数。
+		//98/10=9.8
+		//
+		//在js中，有全局的函数（方法），可以直接去调用。
+		//parseInt():不需要依赖任何对象，在任何的js代码中，可以直接通过方法名调用
+		//
+		switch(parseInt(score/10))
+		{
+            case 10:
+            case 9:
+                 alert("A");
+                 break;
+            case 8:
+                 alert("B");
+                 break;
+            case 7:
+                 alert("C");
+                 break;
+            case 6:
+                 alert("D");
+                 break;
+            default:
+                 alert("E");
+                 break;
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

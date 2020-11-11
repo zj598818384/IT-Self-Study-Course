@@ -1,0 +1,12 @@
+E:\自学  项目合集\C#  课程\练习一\练习21\bin\Debug\练习21.exe
+E:\自学  项目合集\C#  课程\练习一\练习21\bin\Debug\练习21.pdb
+E:\自学  项目合集\C#  课程\练习一\练习21\bin\Debug\CSkin.dll
+E:\自学  项目合集\C#  课程\练习一\练习21\bin\Debug\CSkin.xml
+E:\自学  项目合集\C#  课程\练习一\练习21\obj\Debug\练习21.csprojResolveAssemblyReference.cache
+E:\自学  项目合集\C#  课程\练习一\练习21\obj\Debug\练习21.Form1.resources
+E:\自学  项目合集\C#  课程\练习一\练习21\obj\Debug\练习21.Properties.Resources.resources
+E:\自学  项目合集\C#  课程\练习一\练习21\obj\Debug\练习21.csproj.GenerateResource.Cache
+E:\自学  项目合集\C#  课程\练习一\练习21\obj\Debug\练习21.exe
+E:\自学  项目合集\C#  课程\练习一\练习21\obj\Debug\练习21.pdb
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\练习一\练习21\obj\Debug\练习21.exe
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\练习一\练习21\obj\Debug\练习21.pdb

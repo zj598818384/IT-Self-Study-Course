@@ -1,0 +1,15 @@
+一、冒泡排序
+就是将一个数字中的元素按照从大到小或者从小到大的顺序进行排列 
+int[] nums={9,8,7,6,5,4,3,2,1,0};
+for(int i=0;i<nums.Length-1;i++)
+{
+       for(int j=0;j<nums.Length-1-i;j++)
+       {
+               if(nums[j]>nums[j+1])
+               {	
+                        int temp=nums[j];
+                        nums[j]=nums[j+1];
+                        nums[j+1]=temp;
+               }
+       }
+}

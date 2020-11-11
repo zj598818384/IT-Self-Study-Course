@@ -1,0 +1,12 @@
+/*
+    1 定义变量
+*/
+view {
+  color: red;
+}
+view view text {
+  color: red;
+}
+view {
+  color: red;
+}

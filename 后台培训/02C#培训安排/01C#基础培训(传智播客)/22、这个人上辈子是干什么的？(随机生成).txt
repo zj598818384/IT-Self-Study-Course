@@ -1,0 +1,35 @@
+1、产生随机数
+第一步：创建能够产生随机数的对象
+Random r=new Random();
+第二步：让产生随机数的这个对象调用方法来产生随机数
+int rNumber=r.Nex(1,10);//表示产生的随机数是1-10之间的数字
+第三步：打印
+console.writeline(rNumber);
+
+【练习一】
+1、输入名字随机显示这个人上辈子是什么样的人？
+思路：1、创建能够产生随机数的对象
+          2、产生随机数(1,7)
+Random r=new Random();
+int rNumber=r.Next(1,7);
+console.writeline("请输入一个姓名：");
+string name=console.readline();
+switch(rNumber)
+{
+    case 1:
+           console.writeline("{0}上辈子是个农民",name);
+           break;
+    case 2:
+           console.writeline("{0}上辈子是个总经理",name);
+           break;
+    case 3:
+           console.writeline("{0}上辈子是个皇帝",name);
+           break;
+    case 4:
+           console.writeline("{0}上辈子是个武将",name);
+           break;
+    case 5:
+           console.writeline("{0}上辈子是个书呆子",name);
+           break;
+}
+console.readkey();

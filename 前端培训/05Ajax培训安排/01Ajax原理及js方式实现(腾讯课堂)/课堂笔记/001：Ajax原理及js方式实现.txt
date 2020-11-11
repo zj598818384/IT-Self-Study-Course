@@ -1,0 +1,51 @@
+一、关于Ajax
+它是由异步js和xml组装
+异步刷新：如果网页中某一个地方需要修改，异步刷新可以使：只刷新需要修改的地方，而页面其他地方保持不变。例如：百度搜索框
+
+二、异步刷新的两种方式：
+js：依赖XMLHttpRequest对象
+
+1、XMLHttpRequest对象的方法：
+(1)open(方法名(提交方式get|post),服务器地址,是不是异步形式(true))：与服务端建立连接
+(2)send()：
+如果提交方式为get，那么send直接写send(null),，如果提交方式为post，那么send直接写send(参数值)
+(3)setRequestHeader(header,value)：
+	(1)get：不需要设置：没有请求体
+	(2)post：需要设置：
+		a:如果请求元素中包含了 文件上传：
+		  setRequestHeader("Content-Type","multipart/form-data");
+		b:如果请求元素中不包含，文件上传：
+	      setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+2、XMLHttpRequest对象的属性：
+(1)readystate：请求状态
+readystate表示XMLHttpRequest对象发送的HTTP请求状态，共有五种状态：
+	(a)状态值为0：表示XMLHttpRequest对象没有初始化
+	(b)状态值为1：表示XMLHttpRequest对象开始发送请求，已经执行了open()方法并完				成相关资源的准备
+	(c)状态值为2：表示XMLHttpRequest对象已将请求发送完毕，已经执行了send()方法				来发送请求，但是还没有收到响应
+	(d)状态值为3：表示XMLHttpRequest对象开始读取响应信息：已经接收到了HTTP响应				的头部信息，但是还没有将响应体接收完毕
+	
+	(e)状态值为4：表示XMLHttpRequest对象将响应信息全部读取完毕
+注意：只有状态为4代表请求完毕
+
+(2)status：响应状态
+status表示HTTP响应中的状态码，各状态码的含义：
+	(a)状态码为200：表示服务器正常响应。
+	
+	(b)状态码为400：表示无法找到请求资源。
+	
+	(c)状态码为403：表示没有访问权限。
+	
+	(d)状态码为404：表示访问的资源不存在。
+	
+	(e)状态码为500：表示服务器内部错误，很可能是服务器代码有错
+注意：只有当状态码为200时才表示响应成功；否则，说 明HTTP响应不正常。
+
+(3)onreadystatechange：回调函数
+回调函数指的是：当a函数时b函数的回调函数时，那么当执行完成之后，不会在往后面走				  ，而是直接调用a函数
+
+(4)responseText:响应格式为String
+
+(5)responseXML：响应格式为XML
+
+jQuery：

@@ -1,0 +1,32 @@
+【练习一】
+让用户输入年龄，如果输入的年龄大于等于23岁，则给用户显示你到了结婚的年龄了。
+console.writeline("请输入你的年龄：");
+int age=int.parse(console.readline());
+if(age>=23)
+{
+     console.writeline("结婚去吧，孩子");
+}
+
+【练习二】
+如果老苏的（Chinese music）语文成绩大于90并且音乐成绩大于80；或者语文成绩等于100并且音乐成绩大于70，则奖励100元。
+console.writeline("请输入老苏的语文成绩：");
+int chinese=int.parse(console.readline());
+console.writeline(请输入老苏的音乐成绩：);
+int music=int.parse(console.readline());
+if((chinese>90&&music>80)||(chinese==100&&music>70))
+{
+      console.writeline("考的不错，奖励100元");
+}
+
+【练习三】
+让用户输入用户名和密码，如果用户名为admin，密码为mypass，则提示登录成功。
+console.writeline("请输入你的用户名：");
+string a=int.parse(console.readline());
+console.writeline("请输入你的密码：");
+string m=int.parse(console.readline());
+if(a=="admin"&&m="mypass")
+{
+      console.writeline("恭喜，登录成功");
+}
+
+

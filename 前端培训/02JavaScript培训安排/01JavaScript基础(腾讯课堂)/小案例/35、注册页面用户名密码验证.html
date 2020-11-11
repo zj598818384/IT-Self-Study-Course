@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面用户名密码验证</title>
+		<!-- 引入外部js -->
+	<script type="text/javascript" src="js/regist.js"></script>
+	
+	<!-- 	// 一般的页面都需要进行数据的验证，只有通过js的验证之后，才能将数据提交给后台
+		// 的服务器。或者是在用户输入完之后，根据输入的数据进行简单的验证提示操作。 -->
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+			margin:0 auto;
+			cursor: pointer;
+		}
+
+		td{
+			border:1px solid blue;
+			padding:5px 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="" method="post" onsubmit="return checkForm()" id="userForm">
+		<table>
+			<tr>
+	        	<td>姓名：</td>
+	        	<td>
+	        		<input type="text" id="username" name="username" value="请输入用户名">
+	        		<span id="sname"></span>
+	        	</td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td>
+					<input type="password" name="password" id="pwd">
+					<span id="mima"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td>
+					<input type="password" id="repwd">
+					<span id="mima1"></span>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<input type="radio" name="sex">男
+					<input type="radio" name="sex">女
+					<input type="radio" name="sex">保密
+					<span id="ssex"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>爱好：</td>
+				<td>
+					<input type="checkbox">吃饭
+					<input type="checkbox">睡觉
+					<input type="checkbox">打豆豆
+				</td>
+			</tr>
+			<tr>
+				<td>地址：</td>
+				<td>
+					<select name="" id="">
+						<option value="河南">河南</option>
+						<option value="湖南">湖南</option>
+						<option value="广州">广州</option>
+						<option value="上海">上海</option>
+						<option value="深圳">深圳</option>
+						<option value="黑龙江">黑龙江</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>自我评价：</td>
+				<td>
+					<textarea name="" id="" cols="40" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button value="注册" style="margin-left:90px" type="submit">注册</button>
+					<button value="点击注册" style="margin-left:10px" onclick="_submit()">点击注册</button>
+					<button value="普通按钮" style="margin-left:10px" onclick="_submit()">普通按钮</button>
+					<!-- javascript:void(0)：表示在点击这个超链接的时候需要启用js的解析引擎而不是内地查资源 -->
+					<a href="javascript:void(0)" onclick="_submit()">注册</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

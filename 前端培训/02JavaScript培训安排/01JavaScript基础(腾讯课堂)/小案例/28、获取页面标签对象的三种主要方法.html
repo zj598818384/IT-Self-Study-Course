@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取页面标签对象的三种主要方法</title>
+	<script type="text/javascript">
+		//演示使用document对象的三个不同的方法，获取页面上的某个标签。
+		//注意：要想获取页面上的标签，必须保证在页面加载完成之后获取。
+		//所以属性的代码必须写在window.onload中
+		window.onload=function(){
+			//在document中有getElementById的方法，是通过某个标签上的id属性获取当前这个标签
+			var input=window.document.getElementById('username').value;
+			// var input=document.getElementById('username').value;
+			alert(input);
+
+
+			//getElementsByName方法：他是通过某个标签的name属性值，获取页面上的标签，
+			//由于页面上的标签的name属性值可能重复，导致获取的标签时一个数组
+			var sexs=document.getElementsByName('sex');
+			// alert(sexs.length);
+			for(var i=0;i<sexs.length;i++){
+				if(sexs[i].checked){
+					alert(sexs[i].value);
+				}
+			}
+
+			//getElementsByTagName方法：他是通过标签中页面上的标签。
+			//由于页面上的标签肯定会重复，所以这个返回的依然是一个数组
+			var inputs=document.getElementsByTagName('input');
+			for(var i=0;i<inputs.length;i++){
+				alert(inputs[i].type);
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="username" value="123">
+	<input type="radio" name="sex" value="男"/>男
+	<input type="radio" name="sex" checked value="女"/>女
+</body>
+</html>

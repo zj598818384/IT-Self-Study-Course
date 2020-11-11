@@ -1,0 +1,9 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\bin\Debug\PictureBox项目.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\bin\Debug\PictureBox项目.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\bin\Debug\PictureBox项目.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\obj\Debug\PictureBox项目.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\obj\Debug\PictureBox项目.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\obj\Debug\PictureBox项目.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\obj\Debug\PictureBox项目.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\obj\Debug\PictureBox项目.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目六：PictureBox项目\PictureBox项目\obj\Debug\PictureBox项目.pdb

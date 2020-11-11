@@ -1,0 +1,47 @@
+【继承】
+1、需要被继承的类叫做：基类/父类/超类
+2、需要基础的类叫做：派生类/子类
+3、而中间的过程叫做：派生/继承
+4、is-a：是一个、属于的关系
+5、has-a：有一个、拥有的关系
+6、base：[一]访问基类的成员     [二]访问基类的构造函数
+
+
+【多态】
+1、什么叫多态？
+一个类型，多种状态
+virtual override(可用于属性、方法)
+目标：将变化封闭
+(注：override可以继续继承)
+
+其他关键字
+new sealed(了解)
+
+new：就是不想用去覆写，要用自己的东西，自己写一个
+
+sealed：不允许进行覆写
+
+多态的设计思想在于：只有对象(而不是过程)知道如果执行一个特定的操作，通过规定这些操作的通用方式，利用共性促进代码重用
+
+【抽象类】
+抽象类：实例化后无意义
+抽象类代表抽象的实体  abstract
+最重要的是，定义抽象成员后
+属性、方法不再需要提供默认实现了并强制派生类提供实现
+
+
+
+【所有类，从system.Object派生】
+(1)public virtual bool Equals(object o)：如果作为参数指定的对象在值上(不一定在引用上)与当前对象实例相等，则返回true。
+
+(2)public virtual int GetHashCode()：返回与一个均匀分布的散列码对应的整数。它对于HashTable这样的大集合非常有用
+
+(3)public Type GetType()：返回与对象实例的类型对应的system.Type类型的一个对象
+
+(4)public static bool ReferenceEquals(object o,object b)：如果指定的两个参数引用同一个对象，则为true，否则为false
+
+(5)public virtual string ToString()：返回对象实例的一个字符串表示
+
+(5)public virtual void Finalize()：析构器的一个别名，通知对象准备终结，C#禁止调用这个方法
+
+(7)protected object NenberwlSeClone()：创建当前对象的浅表副本，引用会被赋值，但被引用类型中的数据不会被复制

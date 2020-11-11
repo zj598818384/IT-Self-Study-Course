@@ -1,0 +1,12 @@
+D:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\bin\Debug\飞行棋项目编写.exe.config
+D:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\bin\Debug\飞行棋项目编写.exe
+D:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\bin\Debug\飞行棋项目编写.pdb
+D:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\obj\Debug\飞行棋项目编写.csprojResolveAssemblyReference.cache
+D:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\obj\Debug\飞行棋项目编写.exe
+D:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\obj\Debug\飞行棋项目编写.pdb
+E:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\bin\Debug\飞行棋项目编写.exe.config
+E:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\obj\Debug\飞行棋项目编写.exe
+E:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\obj\Debug\飞行棋项目编写.pdb
+E:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\bin\Debug\飞行棋项目编写.exe
+E:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\bin\Debug\飞行棋项目编写.pdb
+E:\专业学习\C#\C#示例\第七天学习 飞行棋项目\飞行棋项目编写\obj\Debug\飞行棋项目编写.csprojResolveAssemblyReference.cache

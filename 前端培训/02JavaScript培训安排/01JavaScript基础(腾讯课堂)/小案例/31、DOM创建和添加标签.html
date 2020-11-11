@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM创建和添加标签</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//DOM技术，给页面上添加一个a标签
+			//1、需要先创建一个a标签对象出来:在内存中创建一个标签
+			var a=document.createElement("a");
+			//2、创建一个普通文本
+			var text=document.createTextNode("访问新浪");
+			//3、将文本添加到a标签中
+			//appendChild：追加一个子标签
+			a.appendChild(text);
+			//4、创建一个href属性
+			//createAttribute：创建一个属性
+			var href=document.createAttribute("href");
+			//5、给href添加值
+			href.value="http://www.sina.com";
+			//另一种方法
+			//a.setAtteribute("href","http://www.sina.com");
+			//6、给a标签中追加href属性
+			a.setAttributeNode(href);
+			
+			//给按钮一个单击事件
+			document.getElementById('btn').onclick=function(){
+				//如果需要将某个标签添加在其他的标签下面，必须先获取到这个父标签
+				//方法一：
+				//document.getElementsByTagName('body');
+				//方法二：
+				//在body标签中追加一个链接标签
+				document.body.appendChild(a);
+			}
+		}	
+	</script>
+</head>
+<body>
+	<button id="btn">添加一个a标签</button>
+</body>
+</html>

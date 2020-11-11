@@ -1,0 +1,25 @@
+1、三元表达式
+语法：
+表达式1?表达式2:表达式3；
+表达式1一般为一个关系表达式。
+如果表达式1的值为true，那么表达式2的值就是整个三元表达式的值。
+如果表达式1的值为false，那么表达式3的值就是整个三元表达式的值。
+注意：表达式2的结果类型必须要跟表达式3的结果类型一致，并且也要跟整个三元表达式的结果类型一致。
+
+【练习一】
+1、计算两个数字的大小，求出最大的
+console.writeline("请输入第一个数字：");
+int n1=int.parse(console.readline());
+console.writeline("请输入第二个数字：");
+int n2=int.parse(console.readline());
+int max=n1>n2?n1:n2;//三元表达式,
+console.writeline(max);
+console.readkey();
+
+【练习二】
+2、提示用户输入一个姓名，只要输入的不是老赵，就全是流氓
+console.writeline("请输入姓名：");
+string name=console.readline();
+string result=name=="老赵"？"人才呀":"流氓呀";
+console.writeline(result);
+console.readkey();

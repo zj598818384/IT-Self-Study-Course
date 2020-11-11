@@ -1,0 +1,30 @@
+﻿@model _008_增删改查操作_crud_.Models.getmoney
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("Edit", "NewsInfo", FormMethod.Post))
+        {
+            @Model.fid
+            @Html.HiddenFor(n=>n.fid)
+            <br />
+            @Html.TextBoxFor(n=>n.bank_deposit)
+            <br />
+            @Html.TextBoxFor(n => n.bank_account)
+            <br />
+            @Html.TextBoxFor(n => n.payee)
+            <br />
+            <input type="submit" value="修改" />
+        }
+    </div>
+</body>
+</html>

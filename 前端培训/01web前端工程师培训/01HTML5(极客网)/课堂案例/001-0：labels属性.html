@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Validate(){
+			var txtName=document.getElementById('txt_name');
+			var button=document.getElementById('btnValidate');
+			var form=document.getElementById('testform');
+			//trim()：判断是否存在输入空格
+			if (txtName.value.trim()=="") {
+				var label=document.createElement('label');
+				//锁定
+				label.setAttribute('for','txt_name');
+				//插入在谁的前面
+				form.insertBefore(label,button);
+				txtName.labels[1].innerHTML='请输入姓名';
+				//样式
+				txtName.labels[1].setAttribute('style','font-size:9px;color:red');
+			}
+		}
+	</script>
+	<form id="testform">
+		<label id="label" for="txt_name">姓名：</label>
+		<input id="txt_name">
+		<input type="button" id="btnValidate" value="验证" onclick="Validate()">
+	</form>
+	
+</body>
+</html>

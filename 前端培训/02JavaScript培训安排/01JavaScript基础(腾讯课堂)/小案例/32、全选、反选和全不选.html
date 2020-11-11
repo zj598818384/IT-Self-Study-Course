@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全选、反选和全不选</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//给全选绑定单击事件
+			document.getElementById('btn1').onclick=function(){
+				//全选，需要获得当前的4个input标签，将他们的checked属性设置为true
+				//通过input的name值来获取input标签
+				var inputs=document.getElementsByName('hobby');
+				//遍历数组：取出每个input标签，设置checked的属性即可
+				for(var i=0;i<inputs.length;i++){
+					inputs[i].checked=true;
+				}
+			}
+			//给反选绑定单击事件
+			document.getElementById('btn2').onclick=function(){
+				//反选，需要获得当前的4个input标签，将他们的checked属性设置false
+				//通过input的name值来获取input标签
+				var inputs=document.getElementsByName('hobby');
+				//遍历数组：取出每个input标签，设置checked的属性即可
+				for(var i=0;i<inputs.length;i++){
+					// if(inputs[i].checked){
+					// 	inputs[i].checked=false;
+					// }
+					// else{
+					// 	inputs[i].checked=true;
+					// }
+					//简写：
+					inputs[i].checked=!inputs[i].checked;
+				}
+			}
+			//给全不选绑定单击事件
+			document.getElementById('btn3').onclick=function(){
+				//全不选，需要获得当前的4个input标签，将他们的checked属性设置false
+				//通过input的name值来获取input标签
+				var inputs=document.getElementsByName('hobby');
+				//遍历数组：取出每个input标签，设置checked的属性即可
+				for(var i=0;i<inputs.length;i++){
+					inputs[i].checked=false;
+				}
+			}
+
+			//多选单击事件
+			document.getElementById('input').onclick=function(){
+				var inputs=document.getElementsByName('hobby');
+				//遍历
+				for(var i=0;i<inputs.length;i++){
+					inputs[i].checked=this.checked;
+				}
+			}
+		}
+	</script>
+	<style type="text/css">
+		
+		
+	</style>
+</head>
+<body>
+	<input type="checkbox" id="input">全选<br/>
+	<input type="checkbox" name="hobby" id="">Java
+	<input type="checkbox" name="hobby" id="">iOS
+	<input type="checkbox" name="hobby" id="">PHP
+	<input type="checkbox" name="hobby" id="">go
+	<br>
+	<button id="btn1">全选</button>
+	<button id="btn2">反选</button>
+	<button id="btn3">全不选</button>
+</body>
+</html>

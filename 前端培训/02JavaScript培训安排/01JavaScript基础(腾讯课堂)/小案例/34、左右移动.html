@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>左右移动</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//在页面加载完成之后给相应的按钮绑定事件
+			//给右的按钮绑定单击事件
+			var left=document.getElementById('left');
+			left.onclick=function(){
+				//获取左边的select，然后得到select下面的所有的option，遍历option，判断哪个被选中了，将其移动到右边的select中去
+				var leftselect=document.getElementById('leftselect');
+				//获取右边的select
+				var rightselect=document.getElementById('rightselect');
+				//获取左边的所有的option
+				var leftOptions=leftselect.options;
+				遍历左边的option
+				for(var i=0;i<leftOptions.length;i++){
+
+					//取出每个option判断是否被选中
+					if(leftOptions[i].selected){
+						//判断成立，说明被选中了，需要添加到右边的select下面
+						rightselect.appendChild(leftOptions[i]);
+						i--;
+					}
+				}
+				
+				//第二种方法：倒着遍历
+				//遍历左边的option
+				// for(var i=leftOptions.length-1;i>=0;i--){
+				// 	//取出每个option判断是否被选中
+				// 	if(leftOptions[i].selected){
+				// 		//判断成立，说明被选中了，需要添加到右边的select下面
+				// 		rightselect.appendChild(leftOptions[i]);
+				// 	}
+				// }
+			}
+
+			//给全部右走的按钮绑定单击事件
+			document.getElementById('leftAll').onclick=function(){
+				//获取左边的select，然后得到select下面的所有的option，遍历option，判断哪个被选中了，将其移动到右边的select中去
+				var leftselect=document.getElementById('leftselect');
+				//获取右边的select
+				var rightselect=document.getElementById('rightselect');
+				//获取左边的所有的option
+				var leftOptions=leftselect.options;
+				//第一种倒着遍历
+				//  for(var i=leftOptions.length-1;i>=0;i--){
+				// 	rightselect.appendChild(leftOptions[i]);
+				// }
+				
+				//第二种
+				for(var i=0;i<leftOptions.length;i++){
+					rightselect.appendChild(leftOptions[i]);
+					i--;
+				}
+			}
+
+			//给左的按钮绑定单击事件
+			document.getElementById('right').onclick=function(){
+				var leftselect=document.getElementById('leftselect');
+				var rightselect=document.getElementById('rightselect');
+				var rightOptions=rightselect.options;
+				for(var i=0;i<rightOptions.length;i++){
+					if(rightOptions[i].selected){
+						leftselect.appendChild(rightOptions[i]);
+					}
+				}
+			}
+
+			//给全部左走的按钮绑定单击事件
+			document.getElementById('rightAll').onclick=function(){
+				var leftselect=document.getElementById('leftselect');
+				var rightselect=document.getElementById('rightselect');
+				var rightOptions=rightselect.options;
+				for(var i=0;i<rightOptions.length;i++){
+					leftselect.appendChild(rightOptions[i]);
+					i--;
+				}
+			}
+		}
+	</script>
+	<style type="text/css">
+		div{
+			float: left;
+			margin:10px 10px;
+		}
+		
+		.btn button{
+			display: block;
+			width:50px;
+			height:30px;
+			margin-top:13px;
+		}
+	</style>
+</head>
+<body>
+	<!--左边盒子-->
+	<div class="dataleft">
+		<!-- multiple：当设置此属性时，会规定可同时选定多个项目 -->
+		<!-- size：定义菜单中可见项目的数目。 -->
+		<select name="" id="leftselect" multiple="multiple" size="10">
+			<option value="选择1">选择1</option>
+			<option value="选择2">选择2</option>
+			<option value="选择3">选择3</option>
+			<option value="选择4">选择4</option>
+			<option value="选择5">选择5</option>
+			<option value="选择6">选择6</option>
+			<option value="选择7">选择7</option>
+			<option value="选择8">选择8</option>
+			<option value="选择9">选择9</option>
+			<option value="选择10">选择10</option>
+		</select>
+	</div>
+	<!-- 中间盒子 -->
+	<div class="btn">
+		<button id="left">—></button>
+		<button id="leftAll">=></button>
+		<button id="right"><—</button>
+		<button id="rightAll"><=</button>
+	</div>
+	<!-- 右边盒子 -->
+	<div class="dataright">
+		<select name="" id="rightselect" multiple="multiple" size="10">
+			<option value="选择11">选择11</option>
+		</select>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+1.定义一个季节枚举类型
+namespace 枚举
+{	
+           //季节
+           public enum Sesons
+           {
+                   春,
+                   夏,
+                   秋,
+                   冬,
+           }
+           class 枚举练习
+           {
+                   Sesons s=Sesons.春;
+           }
+}
+
+1.定义一个QQ状态枚举类型
+namespace 枚举
+{	
+           //QQ状态
+           public enum QQState
+           {
+                   Online,
+                   Offline,
+                   Leave,
+                   Busy,
+                   QMe,
+           }
+           class 枚举练习
+           {
+                   QQState qq=QQState.Online;
+           }
+}

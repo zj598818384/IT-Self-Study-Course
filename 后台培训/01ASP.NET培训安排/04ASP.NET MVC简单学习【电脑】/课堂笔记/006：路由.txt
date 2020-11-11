@@ -1,0 +1,44 @@
+一、route路由的作用：决定了我们以什么样的方式来进行资源的请求
+
+二、路由规则Route：可以查看源代码了解一下构造方法，需要指定路由格式、默认值、处理器是哪个值
+
+三、路由数据RouteData：当前请求上下文匹配路由规则而得到一个对象，可以在action中通过RouteData.GetRequestString("controller/action")获取本此请求中控制器或行为的真实名称
+
+四、路由集合RouteConllection：存放路由规则的集合Colection<RouteBase>,一个MVC项目中，可以配置多个路由规则，按照键值对的格式存储到路由集合中
+
+五、路由表RouteTable：类中包含静态的RouteCollection属性，往常所有路由规则的全局存储，在Global中完成注册
+
+六、RouteData：包含了上下文类和路由规则 
+
+七、执行过程 
+Route路由规则存放在RouteConllection路由集合中，然后由于RouteTable路由表中包含RouteCollection的静态类，请求上下文类，对应RouteTable然后生成RouteData
+
+八、如何创建路由规则
+(1)打开Global文件
+(2)调用MapRoute方法进行注册，MapRoute(里面放参数)
+(3)命名参数：在调用方法时，可以通过"参数:值"的格式进行调用，好处：注释，参数位置可以与声明时不一致
+(4)查看MapRoute方法的重载
+
+九、MapRoute()方法中形参的含义
+(1)name：设置路由规则的名称，必须是唯一的，重复会报异常，默认添加"default"的路		由的规则
+(2)url：路由规则，里面的controller和action不能改，但是可以更改顺序，可变的值使用	{}括起来
+(a)可以使用?key=value的格式传递参数
+(b)通过路由规则，可以省略?与key部分，直接传递值，在action的参数中自动装配
+(c)优化：如果传递的参数比较多，为action定义多个参数非常乱，则将所有的参数封装到一个类中，将该类定义为action的参数类型
+(3)defaults：设置路由规则中参数的默认值，类型为object，可以传递一个匿名对象，属性取决于规则中定义的参数，参数UrlParameter.Optional表示可选的只读参数，如果在实际的url中没有指定路由规则中某些参数，则会使用默认值作为参数的值使用
+(3)参数constraints：设置路由规则的约束，类型为object，可以传递一个匿名对象，属性取决于规则中定义的参数。参数是正则表达式字符串，如controller="^[a-z]+$"
+
+十、操作步骤
+(1)在当前项目中添加程序集RouteDebug的引用
+(2)在Global文件的Application_Start方法中，在往常路由规则注册的后面，进行调试注册	
+    ：RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes)；
+(3)如果不想进行路由调式，只需要将这句代码删除或注释即可
+
+十、总结
+(1)路由规则可以注册多条
+(2)路由规则的名称不能重复
+(3)路由规则有顺序，并且按照顺序进行匹配；建议子频道的路由规则配置在前面
+(4)路由规则可以设置约束
+(5)路由规则匹配的控制器可以设置命名空间约束
+
+

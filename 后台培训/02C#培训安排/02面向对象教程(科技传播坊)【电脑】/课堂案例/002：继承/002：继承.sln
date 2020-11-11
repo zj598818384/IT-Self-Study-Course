@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002：继承", "002：继承\002：继承.csproj", "{ED974B85-E389-43C3-89D1-C37EA88C0CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "【多态案例】表盘", "【多态案例】表盘\【多态案例】表盘.csproj", "{4C2532F5-08E8-4D71-9EEA-479F422C57A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED974B85-E389-43C3-89D1-C37EA88C0CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED974B85-E389-43C3-89D1-C37EA88C0CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED974B85-E389-43C3-89D1-C37EA88C0CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED974B85-E389-43C3-89D1-C37EA88C0CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2532F5-08E8-4D71-9EEA-479F422C57A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2532F5-08E8-4D71-9EEA-479F422C57A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2532F5-08E8-4D71-9EEA-479F422C57A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2532F5-08E8-4D71-9EEA-479F422C57A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

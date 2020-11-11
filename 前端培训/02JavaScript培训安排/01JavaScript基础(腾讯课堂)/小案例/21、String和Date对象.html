@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>String和Date对象</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	var s="abc";
+
+	document.write(s);
+	document.write(s.big());
+	document.write(s.small());
+	document.write(s.bold());
+	alert(s.bold());
+	document.write(s.fontcolor("red"));
+	document.write(s.fontsize(10));
+	alert(s.fontsize(10));
+
+	//date对象：js中的时间对象
+	var d=new Date();
+	var year=d.getFullYear();
+	var year2=d.getYear();
+	//月份从0开始所以要在后面加一
+	var month=d.getMonth()+1;
+	var day=d.getDate();
+	var h=d.getHours();
+	var m=d.getMinutes();
+	var s=d.getSeconds();
+	document.write(year+"年"+month+"月"+day+"日"+h+":"+m+":"+s);
+</script>
+</html>

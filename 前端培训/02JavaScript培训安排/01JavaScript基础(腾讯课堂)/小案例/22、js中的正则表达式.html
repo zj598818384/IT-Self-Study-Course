@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//正常情况下，经常会将js代码书写在head标签中，
+		//导致浏览器在加载js代码的时候body中的html代
+		//码还没有被加载，可是我们经常会在js代码获取
+		//页面上body里面的标签中的一些数据，导致body中
+		//的内容根本就没有，介绍获取就会报错，为了保证
+		//一定可以获取到页面上的body标签中其他的标签中
+		//的数据在js提供一个动作(事件)，可以在整个页面
+		//加载完成之后再执行js代码
+		//
+		//window.onload表示就是在整个页面加载完成之后要执行的动作
+		window.onload=function(){
+			//写在这里面的代码一定是在页面加载完成之后才会执行的代码
+			//document.getElementById通过元素的ID来获取值
+			var val=document.getElementById("username").value;
+			alert(val);
+		}
+		function demo(){
+			//获取当前这个标签的value数据
+			var val=document.getElementById("username").value;
+			// 由于判断的条件过多所以不建议采用这种方式而是采用正则书写
+			// if (val==""||val==null||val==="请输入用户名") {
+			// 	document.write("不能为空");
+			// }
+			
+			// js中的正则对象中有test方法，可以用来判断当前字符串是否符合指定的规则
+			// 
+			// test方法，它是从需要验证的字符串中找有没有符合正则表达式的内容，只要有就返回true
+			// 可能字符串中除了可以匹配上正则本身的规则之外还有其他的符号，test方法依然返回的true
+			// 所以 大部分情况下使用正则的时候，都需要加上头^和尾$标记
+			// 书写正则，表示的字符串长度在6~12位之间，然后只能是字母、数字、下划线
+			// "[a-zA-z_0~9]{6,12}"===\\w
+			// 
+			// "\\w{6,12}"
+			
+			//^：开始
+			//$：结束
+			//可以这样写
+			//var patt1=new RegExp("^\\w{6,12}$");
+			//也可以这样写
+			var patt1="/^\w{6,12}$/";
+
+			if (patt1.test(val)) {
+				//innerHTML：以HTML的方式输出
+				//innerText：以文本的方式输出
+				document.getElementById("userspan").innerHTML="<font color='green'>用户名合法</font>";
+			}
+			else{
+				document.getElementById("userspan").innerHTML="<font color='red'>用户名非法</font>";
+			}
+			var a=new RegExp("^\\w[a-zA-z_0~9]{6,12}$")
+		}
+		//demo();
+	</script>
+</head>
+<body>
+	<!--onfocus焦点-->
+	用户名：<input type="text" name="username" id="username" value="请输入用户名" onfocus="demo()"/>
+	<span id="userspan"></span>
+
+</body>
+</html>

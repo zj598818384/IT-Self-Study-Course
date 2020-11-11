@@ -1,0 +1,15 @@
+一、通过DOM创建和添加
+1、createElement：创建一个标签
+2、createTextNode：创建一个文本
+3、appendChild：追加一个子标签
+4、createAttribute：创建一个属性
+5、setAttributeNode：设定具有指定名称的属性的值
+
+二、删除、克隆和替换
+1、parentNode：获取父节点
+2、previousSibling：获取前一个兄弟节点
+3、nextSibling：获取下一个兄弟节点
+4、removeChild：删除节点
+5、replaceChild：替换节点
+6、cloneNode：克隆节点3
+

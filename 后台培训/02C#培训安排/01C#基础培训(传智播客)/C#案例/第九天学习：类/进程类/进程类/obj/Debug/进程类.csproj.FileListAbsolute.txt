@@ -1,0 +1,6 @@
+E:\专业学习\自学  C#\C#示例\第九天学习：类\进程类\进程类\bin\Debug\进程类.exe.config
+E:\专业学习\自学  C#\C#示例\第九天学习：类\进程类\进程类\bin\Debug\进程类.exe
+E:\专业学习\自学  C#\C#示例\第九天学习：类\进程类\进程类\bin\Debug\进程类.pdb
+E:\专业学习\自学  C#\C#示例\第九天学习：类\进程类\进程类\obj\Debug\进程类.csprojResolveAssemblyReference.cache
+E:\专业学习\自学  C#\C#示例\第九天学习：类\进程类\进程类\obj\Debug\进程类.exe
+E:\专业学习\自学  C#\C#示例\第九天学习：类\进程类\进程类\obj\Debug\进程类.pdb

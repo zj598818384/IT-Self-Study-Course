@@ -1,0 +1,11 @@
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\StudentSys.Model.dll.config
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\StudentSys.Model.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\StudentSys.Model.pdb
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\EntityFramework.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\EntityFramework.xml
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\obj\Debug\StudentSys.Model.dll
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\obj\Debug\StudentSys.Model.pdb
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\obj\Debug\StudentSys.Model.Migrations.createDb.resources
+F:\后台培训\08ASP.NET WebApi接口项目\StudentSys\StudentSys.Model\obj\Debug\StudentSys.Model.csproj.GenerateResource.Cache

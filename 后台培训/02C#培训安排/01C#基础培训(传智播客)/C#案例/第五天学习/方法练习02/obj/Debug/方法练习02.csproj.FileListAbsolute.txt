@@ -1,0 +1,9 @@
+D:\专业学习\C#\C#示例\第五天学习\方法练习02\bin\Debug\方法练习02.exe.config
+D:\专业学习\C#\C#示例\第五天学习\方法练习02\bin\Debug\方法练习02.exe
+D:\专业学习\C#\C#示例\第五天学习\方法练习02\bin\Debug\方法练习02.pdb
+D:\专业学习\C#\C#示例\第五天学习\方法练习02\obj\Debug\方法练习02.csprojResolveAssemblyReference.cache
+D:\专业学习\C#\C#示例\第五天学习\方法练习02\obj\Debug\方法练习02.exe
+D:\专业学习\C#\C#示例\第五天学习\方法练习02\obj\Debug\方法练习02.pdb
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第五天学习\方法练习02\bin\Debug\方法练习02.exe.config
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第五天学习\方法练习02\obj\Debug\方法练习02.exe
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第五天学习\方法练习02\obj\Debug\方法练习02.pdb

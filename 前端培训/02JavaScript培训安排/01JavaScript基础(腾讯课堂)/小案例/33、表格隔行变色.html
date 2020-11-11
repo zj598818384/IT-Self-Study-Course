@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格隔行变色</title>
+	<script type="text/javascript">
+		//表格隔行变色的思路：
+		//获取到页面上的 需要设置隔行变色的tr，然后遍历不同的tr，将他们的背景颜色进行修改即可
+		window.onload=function(){
+			//获取页面上的tr
+			var tr=document.getElementsByTagName('tr');
+			//遍历当前获取到每个单独的tr
+			//表头的背景颜色和数据行的背景颜色不一样，表头可以进行单独的设置
+			for(var i=1;i<tr.length;i++){
+				//遍历的过程中，根据下标的奇偶性，来设置背景颜色即可
+				if(i%2){
+					tr[i].style.backgroundColor="#48FF39";
+				}
+				else{
+					tr[i].style.backgroundColor="#FF02DA";
+				}
+			}
+
+			//鼠标悬停的时候，需要进行鼠标高亮的设置
+			//鼠标悬停在某行上的时候，给一种背景颜色，鼠标离开之后，恢复到原来的背景颜色
+			//定义一个变量，记录鼠标悬停在某行之前时的背景颜色
+			var oldColor="";
+			for(var i=1;i<tr.length;i++){
+				//添加时间
+				tr[i].onmouseover=function(){
+					oldColor=this.style.backgroundColor;
+					this.style.backgroundColor="#0077FF";
+				}
+				tr[i].onmouseout=function(){
+					this.style.backgroundColor=oldColor;
+				}
+			}
+		}
+	</script>
+	<style type="text/css">
+		table{
+			border:1px dashed blue;
+			margin:0 auto;
+		}
+
+		td,th{
+			border:1px dashed blue;
+			padding:10px 20px;
+		}
+
+		.tabletitle{
+			background: #FF8602;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr class="tabletitle">
+			<th>姓名</th>
+			<th>性别</th>
+			<th>年龄</th>
+			<th>邮箱</th>
+		</tr>
+		<tr>
+			<td>二哈</td>
+			<td>男</td>
+			<td>17</td>
+			<td>1714291837@qq.com</td>
+		</tr>
+		<tr>
+			<td>二哈</td>
+			<td>男</td>
+			<td>17</td>
+			<td>1714291837@qq.com</td>
+		</tr>
+		<tr>
+			<td>二哈</td>
+			<td>男</td>
+			<td>17</td>
+			<td>1714291837@qq.com</td>
+		</tr>
+		<tr>
+			<td>二哈</td>
+			<td>男</td>
+			<td>17</td>
+			<td>1714291837@qq.com</td>
+		</tr>
+	</table>
+</body>
+</html>

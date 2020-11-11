@@ -1,0 +1,26 @@
+﻿【第一节】：初识ASP.NET-web开发
+一、静态网页与服务器技术
+1、静态网页
+	(1)以.html或.htm结尾的网页
+	(2)只能单纯的显示文本和图像	(3)无法和用户交互，无法根据用户的请求显示不同的网页内容(也就是无法和后台数据交互)
+	
+2、服务器端开发技术
+	(1)不仅可以显示文本和图像
+	(2)还可以根据用户请求，动态显示不同的网页内容(即，可以和后台数据库交互)
+	
+二、ASP.NET概述
+1、常见的服务器端开发技术
+PHP、ASP、ASP.NET、JSP等
+
+2、了解ASP
+Active Server Page--动态服务器页面，使用vbscript开发后台程序
+
+3、ASP.NET
+(1)基于.NET平台，可以使用C#和VB.NET开发后台应用程序
+(2)ASP.NET主要用来开发web应用程序
+(3)ASP.NET程序运行在IIS中
+
+4、了解IIS
+(1)IIS(Internet Information Services)是微软的Internet服务器
+(2)IIS是Windows servers操作系统免费捆绑的组件
+(3)IIS是web应用程序运行的服务器

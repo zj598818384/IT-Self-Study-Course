@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        //get
+        $.ajax({
+            url: "/api/Students",
+            type: "get",
+        }).done(
+        function (data) {
+            var array = [];
+            ////console.log(data[object.keys()]);
+            for (var i = 0; i < 3;i++) {
+                //alert(data[i].id);
+                //console.log(data[i].id);
+                var b = data[i].id;
+                //console.log(b);
+                array.push(b);
+            }
+            array.forEach(function (item) {
+                //System.out.printIn(Arrays.toString(item));
+                //console.log(Array.printIn(item.toString()))
+                
+                console.log(item);
+            });
+           
+            
+        })
+        
+        //如何知道你走的是哪里，主要看你的type类型
+
+        //post
+        //$.ajax({
+        //    url: "/api/Students",
+        //    type: "post",
+        //    data: {id:1,name:"张三"}//使用post的时候，使用这种方式进行传递数据，以Json对象的方式传过去
+        //}).done(function () {
+        //    //不管你是否有返回值，这里都会执行，判断是错还是对
+        //    console.info("成功");
+        //}).fail(function (err) {
+        //    //传递服务器的错误
+        //    console.info(err);
+        //    //提取服务器的错误，使用弹框的形式显示出来给用户
+        //    console.log(err.responseJSON.ExceptionMessage);
+        //})
+
+        //put
+        //$.ajax({
+        //    url: "/api/Students/1?name=taotao",//第一种使用get方式传参，通过地址栏
+        //    type: "put",
+        //    data: { id: 12, name: "list" }//第二种是通过data来传递参数
+        //}).done(function () {
+        //    console.info("成功");
+        //}).fail(function (err) {
+        //    console.info(err);
+        //    console.log(err.responseJSON.ExceptionMessage);
+        //})
+
+        //delete
+        //$.ajax({
+        //    url: "/api/Students/1",//第一种使用get方式传参，通过地址栏
+        //    type: "delete",
+        //}).done(function () {
+        //    console.info("成功");
+        //}).fail(function (err) {
+        //    console.info(err);
+        //    console.log(err.responseJSON.ExceptionMessage);
+        //})
+
+        //user
+        //$.ajax({
+        //    url: "api/user/Message",
+        //    type: "get"
+        //}).done(function (data) {
+        //    console.log("成功",data);
+        //}).fail(function () {
+        //    console.log("失败")
+        //})
+    </script>
+</head>
+<body>
+
+</body>
+</html>

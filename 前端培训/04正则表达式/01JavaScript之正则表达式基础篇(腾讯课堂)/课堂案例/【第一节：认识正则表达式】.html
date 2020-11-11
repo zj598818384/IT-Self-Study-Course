@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//常规方法，不使用正则
+		var str='fssd5s6g56fg5sg65688sggdg';
+		var arr=[],tmpStr='';
+		for(var i=0;i<str.length;i++){
+			var n=str.charAt(i);
+			if(n>=0&&n<=9){
+				//提取到的数字
+				tmpStr+=n;
+			}
+			else{
+				//提取到的不是数字
+				if(tmpStr)
+					//将之前提取到的数字存入数组中
+				arr.push(tmpStr);
+				tmpStr="";//清空临时的变量，方便下一次提取数字
+			}
+		}
+		//最后检查一遍有没有数字还没有存入数组的
+		if(tmpStr){
+			arr.push(tmpStr);
+		}
+		console.log(arr);
+
+		//正则方法：
+		var str1='fssd5s6g56fg555sg65688sggdg';
+		var re=/\d+/g;
+		var arr=str.match(re);
+		//第二种正则
+		var arr=str.match(/\d+/g);
+		console.log(arr,'正则写法');
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

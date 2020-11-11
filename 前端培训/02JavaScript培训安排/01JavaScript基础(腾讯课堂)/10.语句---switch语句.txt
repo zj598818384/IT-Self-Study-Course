@@ -1,0 +1,48 @@
+一、switch语句结构
+switch（表达式）
+{
+     //表达式必须可以九三出一个确定的结果
+        case 常量1：
+                 语句；
+                break；
+        case 常量1：
+                 语句；
+                break；
+        case 常量1：
+                 语句；
+                break；
+        .....
+       default:
+                 语句；
+                break；
+}
+
+
+switch结构:
+在js中数字不分整数和小数。所有的数字都是number
+如果两个整数在js中进行除法运算，结果有可能就是小数。
+98/10=9.8
+在js中，有全局的函数（方法），可以直接去调用。
+parseInt():不需要依赖任何对象，在任何的js代码中，可以 直接通过方法名调用
+<script type="text/javascript">
+             var score=98;
+             switch(parseInt(score/10))
+             {
+                         case 10:
+                         case 9:
+                                 alert("A");
+                                 break;
+                         case 8:
+                                 alert("B");
+                                 break;
+                         case 7:
+                                 alert("C");
+                                 break;
+                         case 6:
+                                 alert("D");
+                         break;
+                         default:
+                                 alert("E");
+                                 break;
+}
+</script>

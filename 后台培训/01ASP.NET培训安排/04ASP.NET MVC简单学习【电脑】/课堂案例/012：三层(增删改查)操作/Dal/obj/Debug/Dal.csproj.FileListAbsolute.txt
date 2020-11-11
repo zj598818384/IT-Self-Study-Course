@@ -1,0 +1,10 @@
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\Dal.dll
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\Dal.pdb
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\EntityFramework.dll
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\Model.dll
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\Model.pdb
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\EntityFramework.xml
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\obj\Debug\Dal.dll
+F:\后台培训\01ASP.NET培训安排\04ASP.NET MVC简单学习【电脑】\课堂案例\012：三层(增删改查)操作\Dal\obj\Debug\Dal.pdb

@@ -1,0 +1,26 @@
+<!--pages/firstPage/first.wxml-->
+<!-- 导入模板 -->
+<!-- 方法一 -->
+<include src="../templates/header"/>
+
+<button type="default" hover-class="other-button-hover">default</button>
+<button type="primary" bindtap="btnClick">{{btn}}</button>
+
+<text>{{text}}</text>
+
+<!-- 条件标签:wx:if -->
+<!-- 实现显示隐藏 -->
+<view wx:if="{{show}}">{{text}}  1</view>
+<view wx:else="{{show}}">{{text}}  2</view>
+
+<!-- wx:for-item：重定义for循环中的内容item标记 -->
+<!-- wx:for-index：重定义for循环中的下标index标记 -->
+<view wx:for="{{news}}" wx:for-item="itemx" wx:for-index="indexx">
+  {{indexx}}+{{itemx}}
+</view>
+<!-- 导入模板 -->
+<!-- 方法二 -->
+<import src="../templates/footer"/>
+<!-- 指定底部模板为模板几 -->
+<!-- 通过data可以共用相同的模板内容 -->
+<template is="footer2" data="{{text:'导入设置的内容..'}}"/>

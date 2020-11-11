@@ -1,0 +1,16 @@
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\测试.exe.config
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\测试.exe
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\测试.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\BookSystem.DAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\BookSystem.IDAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\BookSystem.Models.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\EntityFramework.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\EntityFramework.SqlServer.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\BookSystem.DAL.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\BookSystem.Models.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\BookSystem.IDAL.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\EntityFramework.xml
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\bin\Debug\EntityFramework.SqlServer.xml
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\obj\Debug\测试.csprojResolveAssemblyReference.cache
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\obj\Debug\测试.exe
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\测试\obj\Debug\测试.pdb

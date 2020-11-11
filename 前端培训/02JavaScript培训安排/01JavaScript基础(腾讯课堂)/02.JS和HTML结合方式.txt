@@ -1,0 +1,11 @@
+一.JavaScript和页面结合方式
+第一种方式
+（1）需要在html文件中嵌入JavaScript代码时，需要在html文件中使用script标签完          成。
+        列如：    <script type="text/javascript">
+                               alert("Hello World");
+                      </script>
+
+第二种方式
+（2）我们可以单独建立一个文件保存js代码，然后在需要的html压面引入这个js代码
+         列如：     
+              <script type="text/javascript" src="js路径"></script>

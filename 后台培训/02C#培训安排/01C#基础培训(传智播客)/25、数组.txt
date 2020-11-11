@@ -1,0 +1,29 @@
+一、数组
+一次性存储多个相同类型的变量
+语法：
+数组类型[] 数组名=new 数组类型[数组长度];
+数组的长度一旦固定了，就不能进行修改了
+
+如果你想要访问到数组中的某块元素，需要通过这个元素的下标或索引去访问
+
+二、各种数组的初始值
+string[] str= new string[10];//初值为null
+bool[] bo=new bool[10];//初值为false
+int[] nums=new int[10];//初值为0
+
+三、声明数组的方法
+int[] nums=new int[10];
+int[] nums={1,2,3,4,5};
+int[] nums=new int[3]{1,2,3};
+int[] nums=new int[]{1,2,3,4,5,6};
+
+四、数组的赋值和取值
+int[] nums=new int[10];
+for(int i=0;i<10;i++)
+{
+         nums[i]=i;	
+}
+for(int i=0;i<10;i++)
+{
+         console.writeline(nums[i]);	
+}

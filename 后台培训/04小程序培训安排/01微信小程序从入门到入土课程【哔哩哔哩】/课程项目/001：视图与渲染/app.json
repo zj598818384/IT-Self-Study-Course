@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/firstPage/first",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/templates/header"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "001：视图与渲染",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,1 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十三：progressBar进度条控件\progressBar进度条控件\bin\Debug\progressBar进度条控件.exe.config

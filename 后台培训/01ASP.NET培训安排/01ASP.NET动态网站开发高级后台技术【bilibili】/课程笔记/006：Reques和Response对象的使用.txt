@@ -1,0 +1,26 @@
+一、Request与Response对象产生的时机
+html请求Request对象，Response对象响应html
+
+二、Request与Response对象的本质
+1、Request对象其实是HttpRequest对象，在页面类中系统自动创建。
+2、Request对象封装了用户请求的信息(用户输入的信息或URL参数)。
+3、Response对象封装服务器的响应信息。
+
+三、Request对象如何获取传递过来的数据？
+1、QueryString属性(查询字符串)：获取通过URL路径传来的数据。
+	不同页面之间参数传递：第一个参数之前使用?参数之间使用&连接
+	
+2、Form属性(表单数据)：获取通过表单提交传输的数据。
+
+3、ServerVariables属性：获取Web服务器变量的集合。
+
+4、Params属性：以上三种方式传输的内容都可以使用该属性获取
+	通过表单提交数据(和HttpHandler获取参数完全相同)
+
+四、Response对象用于操作页面的输出流
+1、Write方法：直接在页面上输出内容(在页面的最顶端输出)(在后续jQuery课程只能怪将大量使用)
+2、Redirect方法：重定向到另一个页面(通过后台程序控制页面的跳转)
+例如：
+Response.Write("您好!");
+外部重定向：Response.Redirect("http://xiketang.ke.qq.com");
+内部重定向：Response.Redirect("Default.aspx?name=xiaohong");

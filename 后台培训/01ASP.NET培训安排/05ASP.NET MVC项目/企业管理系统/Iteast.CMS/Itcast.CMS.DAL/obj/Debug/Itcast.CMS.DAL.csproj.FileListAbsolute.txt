@@ -1,0 +1,7 @@
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.DAL.dll
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.DAL.pdb
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.Model.dll
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\bin\Debug\Itcast.CMS.Model.pdb
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\obj\Debug\Itcast.CMS.DAL.csprojResolveAssemblyReference.cache
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\obj\Debug\Itcast.CMS.DAL.dll
+F:\后台培训\01ASP.NET培训安排\05ASP.NET MVC项目\企业管理系统\Iteast.CMS\Itcast.CMS.DAL\obj\Debug\Itcast.CMS.DAL.pdb

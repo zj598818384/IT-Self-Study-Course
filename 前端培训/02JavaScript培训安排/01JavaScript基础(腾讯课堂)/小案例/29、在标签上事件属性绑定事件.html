@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中的事件介绍</title>
+	<script type="text/javascript">
+		//第一种方法绑定事件
+		function demo(){
+			//获取指定id的div标签对象
+			var div=document.getElementById('div1');
+			//修改当前获取到的这个div的背景
+			//object.style.backgroundColor[=sColor];
+			div.style.backgroundColor="#ff00ff";
+		}
+
+		function demo1(){
+			var div=document.getElementById('div1');
+			div.style.backgroundColor="#FFF";
+			//由于鼠标进入的时候我们使用的style标签的方式添加样式
+			//那么在使用class属性改样式的时候必须先删除style属性
+			//移除样式
+			div.removeAttribute("style");
+			//将以定的类的样式赋值给div
+			div.className="abc";
+		}
+	</script>
+	<style type="text/css">
+		div{
+			width:100px;
+			height:100px;
+			border:1px solid red;
+		}
+
+		.abc{
+			background:#5EFF00;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="">
+	<button>按钮</button>
+	<div onmouseenter="demo()" id="div1" onmouseleave="demo1()"></div>
+</body>
+</html>

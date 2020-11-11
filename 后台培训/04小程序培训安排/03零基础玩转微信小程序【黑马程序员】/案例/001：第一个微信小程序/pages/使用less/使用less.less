@@ -1,0 +1,22 @@
+/*
+    1 定义变量
+*/
+@color:yellow;
+view{
+    color:@color;
+}
+
+// 嵌套样式
+view{
+    view{
+        text{
+            color:red;
+        }
+    }
+}
+
+//导入样式
+@import "../../style/less.less";
+view{
+    color:@color;
+}

@@ -1,0 +1,29 @@
+一、逻辑运算
+Java中的逻辑运算符号：
+&（与）、&&（双与）、|（或）、||（双或）、^（异或）、!（非）
+js中的逻辑运算符号：&&、||、！
+&&左边为false右边不算
+||左边为true右边不算
+
+例如：
+<script type="text/javascript">
+1、js中的逻辑运算
+&&：当左侧为false，右侧不算。两侧都为true的时候结果为true
+||：当左侧为true，右侧不算。两侧都为false的时候结果为false
+！：非true为false，非false为true
+
+js中的逻辑运算，在运算的时候，如果两侧是明确的boolean值，结果肯定是boolean.如果两侧有不是boolean值的，那么逻辑运算的结果就有可能是boolean数据
+
+在js中，遇到所有非零值都可以当做true来使用。如果遇到零、null、undefined这些数据都可以当做false来使用
+
+在&&运算中，两侧都不是明确的boolean数据，这时依然遵守左侧为false，右侧不算的原则。但是&&的结果不是一个boolean数据而是参与运算的表达式的结果作为&&的结果处理
+
+在||运算中，当左侧为true，右侧不算原则，但是如果两侧也不是明确boolean值，也会将参与运算表达式的结果作为||的结果
+	var a=12;
+	var b=34;
+	var c=21;
+	var d=43;
+	alert(a<b&&c>d);//false
+	var e=a&&b+c;
+	alert(e);
+</script>

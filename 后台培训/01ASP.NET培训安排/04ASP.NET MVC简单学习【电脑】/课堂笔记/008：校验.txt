@@ -1,0 +1,15 @@
+1、在model中创建类型，用于在view中作为强类型页面的类型
+2、.Net框架中System.ComponentModel.DataAnnotations命名空间包括了众多可用的内置验证特性，用于修饰属性，常用的四个如下：
+(1)[Required]
+(2)[StringLength]
+(3)[Range]
+(4)[RegularExpression]
+(5)属性ErrorMessage：指定错误提示信息
+
+
+3、在view的页面中，首先指定页面强类型@model类型
+4、使用HTML.***For(model=>model.Property)生成表单，这些表单元素中就会包含校验规则属性
+5、引用jQuery、jQuery校验、jQuery隐式校验3个组件
+6、通过HTML.EnableClientValidation(true);控制客户端验证的启用与禁用(mvc3中自动开启)
+7、使用html.ValidationMessageFor(..)显示校验信息，也可以使用html.ValidationSummary()统一显示
+8、点击提交按钮转到后台Action，使用ModelState.IsValid判断前台验证是否成功，如果返回true表示验证成功

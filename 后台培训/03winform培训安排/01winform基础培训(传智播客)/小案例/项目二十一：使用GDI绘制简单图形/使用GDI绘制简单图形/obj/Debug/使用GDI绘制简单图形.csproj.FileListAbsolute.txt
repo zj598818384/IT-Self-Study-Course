@@ -1,0 +1,8 @@
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\bin\Debug\使用GDI绘制简单图形.exe
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\bin\Debug\使用GDI绘制简单图形.pdb
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\obj\Debug\使用GDI绘制简单图形.csprojResolveAssemblyReference.cache
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\obj\Debug\使用GDI绘制简单图形.Form1.resources
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\obj\Debug\使用GDI绘制简单图形.Properties.Resources.resources
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\obj\Debug\使用GDI绘制简单图形.csproj.GenerateResource.Cache
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\obj\Debug\使用GDI绘制简单图形.exe
+E:\自学  项目合集\winform  课程\项目\项目二十一：使用GDI绘制简单图形\使用GDI绘制简单图形\obj\Debug\使用GDI绘制简单图形.pdb

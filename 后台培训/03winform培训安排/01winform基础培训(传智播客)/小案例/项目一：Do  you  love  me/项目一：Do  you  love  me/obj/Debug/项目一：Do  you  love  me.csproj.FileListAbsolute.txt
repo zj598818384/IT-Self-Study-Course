@@ -1,0 +1,9 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\bin\Debug\项目一：Do  you  love  me.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\bin\Debug\项目一：Do  you  love  me.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\bin\Debug\项目一：Do  you  love  me.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\obj\Debug\项目一：Do  you  love  me.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\obj\Debug\项目一_Do__you__love__me.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\obj\Debug\项目一_Do__you__love__me.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\obj\Debug\项目一：Do  you  love  me.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\obj\Debug\项目一：Do  you  love  me.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目一：Do  you  love  me\项目一：Do  you  love  me\obj\Debug\项目一：Do  you  love  me.pdb

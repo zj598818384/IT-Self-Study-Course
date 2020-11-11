@@ -1,0 +1,13 @@
+<template name="footer1">
+  这里是底部模板一
+</template>
+
+<template name="footer2">
+  这里是底部模板二--{{text}}
+</template>
+<template name="footer3">
+  这里是底部模板三
+</template>
+<template name="footer4">
+  这里是底部模板四
+</template>

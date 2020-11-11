@@ -1,0 +1,104 @@
+【练习一】判断一个年份是否是润年。
+class Program
+{
+      static void Main(string[] args)
+      {
+            bool b=IsRun(2000);
+            console.writeline(b);
+      }
+      public static bool IsRun(int year)
+      {
+            bool b=(year%400==0)||(year%4==0&&year%100!=0);
+            return b;//返回bool类型
+      }
+}
+
+【练习二】计算两个整数之间的最大值。
+class Program
+{
+      static void Main(string[] args)
+      {
+            int max=GetMax(10,20);//实参
+            console.writeline(max);
+      }
+      public static int GetMax(int n1,int n2)//形参
+      {
+            int max=n1>n2?n1:n2;
+            return max;
+      }
+}
+
+【练习三】读取输入的整数多次调用(如果用户输入的是数字，则返回，否则提示用户重新输入)。
+class Program
+{
+      static void Main(string[] args)
+      {
+            console.writeline("请输入一个数字：");
+            string input=console.readline();
+            int number=GetNumber(input);
+            console.writeline(number);
+      }
+      public static int GetNumber(string s)
+      {
+            while(true)
+            {
+                   try
+                   {
+                          int number=convert.toint32(s);
+                          return number;
+                   }
+                   catch
+                   {
+                          console.writeline("请重新输入");
+                          s=console.readline();
+                   }
+            }
+      }
+}
+
+【练习四】只允许用户输入yes或者no。
+class Program
+{
+      static void Main(string[] args)
+      {
+            console.writeline("请输入yes或者no");
+            string str=console.readline();
+            string result=IsYesOrNo(str);
+            console.writeline(result);
+      }
+      public static string IsYesOrNo(string input)
+      {
+            while(true)
+            {
+                  if(input=="yes"||input=="no")
+                  {
+                          return input;
+                  }
+                  else
+                  {
+                          console.writeline("只能输入yes或者no，请重新输入");
+                          input=console.readline();
+                  }
+            }
+      }
+}
+
+【练习五】计算输入数组的和：int Sum(int[] values)
+class Program
+{
+      static void Main(string[] args)
+      {
+            int[] nums={1,2,3,4,5,6,7,8,9}；
+            int sum=GetSum(nums);
+            console.writeline(sum);
+      }
+      public static int GetSum(int[] nums)
+      {
+            int sum=0;
+            for(int i=0;i<nums.Length;i++)
+            {
+                  sum+=nums[i];
+            }
+            return sum;
+      }
+}

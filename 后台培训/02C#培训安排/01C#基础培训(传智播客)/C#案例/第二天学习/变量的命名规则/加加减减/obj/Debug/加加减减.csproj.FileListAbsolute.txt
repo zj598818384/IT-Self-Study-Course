@@ -1,0 +1,6 @@
+D:\专业学习\C#\C#示例\第二天学习\变量的命名规则\加加减减\bin\Debug\加加减减.exe.config
+D:\专业学习\C#\C#示例\第二天学习\变量的命名规则\加加减减\bin\Debug\加加减减.exe
+D:\专业学习\C#\C#示例\第二天学习\变量的命名规则\加加减减\bin\Debug\加加减减.pdb
+D:\专业学习\C#\C#示例\第二天学习\变量的命名规则\加加减减\obj\Debug\加加减减.csprojResolveAssemblyReference.cache
+D:\专业学习\C#\C#示例\第二天学习\变量的命名规则\加加减减\obj\Debug\加加减减.exe
+D:\专业学习\C#\C#示例\第二天学习\变量的命名规则\加加减减\obj\Debug\加加减减.pdb

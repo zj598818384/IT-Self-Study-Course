@@ -1,0 +1,9 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\bin\Debug\学生或者老师登录.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\bin\Debug\学生或者老师登录.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\bin\Debug\学生或者老师登录.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\obj\Debug\学生或者老师登录.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\obj\Debug\学生或者老师登录.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\obj\Debug\学生或者老师登录.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\obj\Debug\学生或者老师登录.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\obj\Debug\学生或者老师登录.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目四：学生或者老师登录\学生或者老师登录\obj\Debug\学生或者老师登录.pdb

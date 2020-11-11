@@ -1,0 +1,70 @@
+﻿@model IQueryable<Model.UserInfo>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        $(function () {
+            LoadList();
+        });
+        function GoPage(pageIndex) {
+            LoadList(pageIndex);
+        }
+        function LoadList(pageIndex) {
+            $.getJSON(
+                    '@Url.Action("LoadList","UserInfo")',
+                    {
+                        pageSize: 2,//一页的条数
+                        pageIndex:pageIndex//当前页数的索引
+                    },
+                    function (list1) {
+                        var list = $('#list');
+                        list.empty();
+                        $.each(list1.list, function (index, item) {
+                            list.append('<tr><td>' + item.Id + '</td>'+'<td>' + item.cid + '</td>'+'<td>' + item.pwd + '</td>'+'<td>' + item.type + '</td>'+'<td>' + item.score + '</td>'+'<td>' + item.stateid + '</td>'+'<td><a href="+@Url.Action("Edit","BookInfo")+?id='+item.Id+'">修改</a></td>'+'<td>'+@Html.ActionLink("删除","Del","UserInfo")+'</td>'+'</tr>')
+                        });
+
+                        list.append('<tr><td colspan=6>'+list1.pager+'</td></tr>')
+                    }
+                )
+        }
+    </script>
+</head>
+<body>
+    <div> 
+        @Html.ActionLink("添加","Add","UserInfo")
+        <br />
+        <table border="1">
+            <tr>
+                <th width="100">编号</th>
+                <th width="100">账号</th>
+                <th width="100">密码</th>
+                <th width="100">类型</th>
+                <th width="100">金额</th>
+                <th width="100">状态id</th>
+                <th width="100">修改</th>
+                <th width="100">删除</th>
+            </tr>
+            <tbody id="list"></tbody>
+            @*@foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.CustomerID</td>
+                    <td>@item.CustomerPWD</td>
+                    <td>@item.CustomerType</td>
+                    <td>@item.Score</td>
+                    <td>@item.StatesId</td>
+                </tr>
+            }*@
+        </table>
+    </div>
+</body>
+</html>

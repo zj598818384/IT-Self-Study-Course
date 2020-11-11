@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(function () {
+            $("#btnadd").click(function () {
+                $.post(
+                    //视图和控制器
+                    '@Url.Action("CalcAdd","Home")',
+                    $('#form1').serialize(),
+                    function (msg) {
+                        $('#sum').val(msg);
+                    }
+                 )
+            })
+        })
+
+        //异步回调函数
+        function Success(obj) {
+            $("#result").val(obj.Sum);
+        }
+    </script>
+</head>
+<body>
+    <div> 
+        <form id="form1">
+            <input type="text" name="calc1" />+
+            <input type="text" name="calc2" />
+            <input type="button" id="btnadd" value="加" />
+            <input  type="text" name="sum" id="sum"/>
+        </form>
+          
+        @* 方法二 *@
+        <br />
+        @* new AjaxOptions()写参数 *@
+        @* 异步请求的过程 *@
+        @using (Ajax.BeginForm("CalcAdd1", "home", new AjaxOptions() {
+            //OnSuccess：表示异步请求成功之后的回调函数
+            OnSuccess = "Success"
+        }))
+        {
+            <input  type="text" name="calc1"/>
+            <span>+</span>
+            <input tye="text" name="calc2" />
+            <input type="submit"  value="="/>
+            <input type="text" id="result" />
+        }
+    </div> 
+</body>
+</html>

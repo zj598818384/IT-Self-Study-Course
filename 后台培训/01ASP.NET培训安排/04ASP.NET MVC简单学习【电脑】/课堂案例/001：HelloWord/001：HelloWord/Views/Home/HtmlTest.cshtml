@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HtmlTest</title>
+</head>
+<body>
+    <div> 
+        <a href="/home/index">超链接1</a>
+        <br />
+        @* 根据路由规则动态拼接地址的字符串 *@
+        <a href="@Url.Action("Index","home")">超链接2</a>
+        <br />
+        @* 帮助类 *@
+        @Html.ActionLink("超链接3", "HtmlTest", "Home")
+
+        @* 在页面特定输出一个值使用html.Raw()，而不使用response.write()会输出到页面最顶端 *@
+        @Html.Raw("2");
+
+        @* 编码 *@
+        <br />
+        @{ 
+            string name = "<b>123</b>";
+        }
+        @* 进行编码操作 *@
+        @Html.Encode(name);
+
+
+        <br />
+        @* 表单 *@
+        @using (Html.BeginForm("Show", "home", FormMethod.Post))
+        {
+            @Html.TextBox("uname")
+            <br />
+            @Html.TextBox("qq");
+        }
+
+        <br />
+        @ViewData["zhh"]
+        @ViewBag.qq
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+¡¾Á·Ï°Ò»¡¿
+int a=5;
+int b=a+++++a*2+--a+a--;
+console.writeline(a);
+console.writeline(b);
+console.readkey();

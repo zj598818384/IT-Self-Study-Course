@@ -1,0 +1,172 @@
+一、while循环结构
+while(循环条件)
+{
+      //循环体;
+}
+执行过程：程序运行到while处，首先判断while多带的小括号内的循环条件是否成立，如果成立的话，也就是返回一个true，则执行循环体，执行完一遍循环体后，在次跳出while循环。
+在while循环中，一般总会有那么一行代码，能改变循环条件，使之终有一天不再成立，如果没有那么一行代码能够改变循环条件，也就是循环条件永远都成立，我们称之这种循环叫做死循环。
+最简单的最常用的死循环：
+while(true)
+{}
+特点:先判断，在执行，有可能一遍循环都不执行。
+
+【练习一】
+1、向控制台打印100遍，下次考试我一定要细心
+分析：循环体:console.writeline("下次考试我一定细心");
+          循环条件:打印的次数小于100遍
+
+//需要定义一个训话变量用来记录循环的次数，每循环一次，循环变量都应该自身加1
+int i=0;
+while(i<100)
+{
+      console.writeline("下次考试我一定要细心\t{0}",i);
+      i++;//每循环一次，都要自身加1，否则就是死循环
+}
+console.readline();
+
+【练习二】
+2、求1-100之间所有整数的和
+分析：循环体:累加的过程
+          循环条件:i<=100
+
+int i=1;
+int sum=0;//声明一个变量用来存储总和
+while(i<=100)
+{
+      if(i%2!=0)
+     {
+          sum+=i;
+     }
+     i++;
+}
+console.writeline(sum);
+console.readkey();
+
+【练习三】
+3、要求用户输入用户名和密码，用户名只要不是admin，密码不是888888
+分析：循环体:提示用户输入的用户名我们接受密码接受判断是否登录成功
+          循环条件:用户名或密码错误
+
+string username="";
+string userpwd="";
+while(username!="admin"||userpwd="888888")
+{
+    console.writeline("请输入用户名：");
+    username=console.readline(); 
+    console.writeline("请输入密码：");
+    userpwd=console.readline();
+}
+console.writeline("登录成功");
+console.readkey();
+
+【练习四】
+4、输入班级人数，然后依次输入学员成绩，计算班级学员的平均成绩和总成绩
+分析：循环体:提示输入学员成绩接收，并转换成整数类型，累加到总成绩当中
+          循环条件:循环的次数小于等于班级人数
+
+console.writeline("请输入班级人数:");
+int count=convert.toint32(console.readline());
+int sum=0;//用来存放总成绩
+int i=1;//声明一个循环变量用来记录循环的次数
+while(i<=count)
+{
+     console.writeline("请输入第{0}个学员的考试成绩",i);
+     int score=covert.toint32(console.readline());
+     //表示把每一个学员的成绩累加到总成绩当中
+     sum+=score;
+     i++; 
+}
+console.writeline("{0}个人的班级总成绩是{1}平均成绩是{2}",count,sum,sum/count);
+console.readkey();
+
+【练习五】
+5、老师问学生，这道题你会做了吗？如果学生答会了(yes),则可以放学,如果学生不会做(no),则老师在讲一遍，在问学生是否会做了...直达学生会为止，才可以放学,直到学生或老师给他讲了10遍还不会，都要放学。
+分析：
+放学的两个条件：
+(1)会了
+(2)讲完第十遍，不管你会不会，都放学
+循环体:老师不停的提问，学生不停的回答，老师还要不停的讲
+循环条件:学生不会，讲的次数小于10遍
+
+string answer="";
+int i=0;
+while(answer=="no" && i<10)
+{
+    console.writeline("这是我第{0}遍给你讲，你会了吗?yes/no",i+1);
+    answer=console.readline();//yes或no
+    //如果学生回答的是会了，此时应该跳出循环
+    if(answer=="yes")
+    {
+        console.writeline("会了那就放学!!!");
+        break;
+    }
+    i++;
+}
+console.readkey();
+
+【练习六】
+6、2006年培养学员80000人，每年增长25%，请问按此增长速度，到哪一年培训学员人数将到达20万人？
+分析：循环体:人数每年增长25%
+          循环条件:人数>=20万
+
+double people=80000;
+int year=2006;
+while(people<200000)
+{
+     people*=1.25;
+     yesr++;
+}
+console.writeline("{0}年培训学员人数将到达20万人",year)
+console.readkey();
+
+【练习七】
+7、提示用户输入yes或者no,要求：只能输入yes或者no，只要不是yes或者no就要求用户一直重新输入
+分析：循环体:提示用户输入，我们接收并且判断
+          循环条件:输入不能是yes或者no
+
+string input="";
+while(input !="yes" && input !="no")
+{
+    console.writeline("请输入yes或者no");
+    input=console.readline();
+} 
+cosnole.readkey();
+
+【练习八】
+8、写一个循环提示用户A输入用户名，要求A的用户名不能为空，只要为空，就要求一只重新输入。
+分析：循环体:提示A输入用户名，接收，判断
+          循环条件:用户名为空
+string usernameA="";
+while(usernameA=="")
+{
+    console.writeline("请输入用户名，不能为空!!!");
+    usernameA=console.readline();
+}
+console.readkey();
+
+【练习九】
+9、提示用户B输入用户名，要求B的用户名不能跟A的用户名相同，并且不能为空，只要为空，并且跟A的用户名相同，就一直提示用户B重新输入用户名。
+分析：循环体:提示输入B的用户名，接收并判断
+          循环条件:用户名为空或者跟A相同
+console.writeline("请输入用户名，不能跟A相同，并且不能为空");
+string usernameB="";
+while(usernameB==""||ursenameA==usernameB)
+{
+    if(usernameB=="")
+    {
+         console.writeline("用户名不能为空,请重新输入");
+         usernameB=console.readline();
+    }
+    else
+    {
+          console.writeline("用户名B不能跟A的用户名相同，请重新输入");
+          usernameB=console.readline();
+    }
+}
+console.readkey();
+                                                                                                                      2、break关键字的用法
+(1)可以跳出switch-case结构。
+(2)可以 跳出当前while循环
+break一般不单独的使用，而是跟着if判断一起使用，表示当满足某些条件的时候，就不再循环了。
+
+

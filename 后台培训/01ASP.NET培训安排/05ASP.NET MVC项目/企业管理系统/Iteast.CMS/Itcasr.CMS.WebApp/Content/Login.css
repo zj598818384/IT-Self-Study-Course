@@ -1,0 +1,56 @@
+﻿.container-fluid{
+     height:380px;
+     background:#0094ff;
+      border:1px solid #0094ff;
+}
+
+.container{
+    height:400px;
+    width:525px;
+    margin-top:180px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:1px 1px 6px #808080
+}
+
+.title{
+    height:80px;
+    text-align:center;
+    font-size:34px;
+    line-height:80px;
+    letter-spacing:2px;
+    color:#0094ff;
+    margin-top:25px;
+    text-shadow:0.5px 1.5px 3px #808080;
+}
+
+.form{
+    height:200px;
+}
+
+.form-group{
+    width:390px;
+    margin:0px auto;
+    margin-top:15px;
+}
+
+.label-user,.label-pwd{
+    font-size:17px;
+    font-weight:normal;
+}
+
+.form-control{
+    height:40px;
+}
+
+.btn-info{
+    width:88px;
+    height:37px;
+    background:#0094ff;
+    margin-left:40px;
+    margin-top:35px;
+}
+
+.reset{
+    margin-left:137px;
+}

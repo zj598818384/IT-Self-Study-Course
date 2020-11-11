@@ -1,0 +1,13 @@
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EF优化.exe.config
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EF优化.exe
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EF优化.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EntityFramework.dll
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EntityFramework.SqlServer.dll
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EntityFramework.xml
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\bin\Debug\EntityFramework.SqlServer.xml
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\obj\Debug\EF优化.exe
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\obj\Debug\EF优化.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\obj\Debug\EF优化.Migrations.createdb.resources
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\obj\Debug\EF优化.csproj.GenerateResource.Cache
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\obj\Debug\EF优化.Migrations.changeBookType_CreateTime.resources
+F:\后台培训\09EntityFramework优化以及高级使用\EF优化\EF优化\obj\Debug\EF优化.csprojResolveAssemblyReference.cache

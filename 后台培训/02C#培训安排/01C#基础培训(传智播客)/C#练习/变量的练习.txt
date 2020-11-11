@@ -1,0 +1,19 @@
+【练习一】
+1、定义四个变量，分别存储一个人的姓名、性别（Gender）、年龄、电话（TelephoneNumber）。然后打印在屏幕上（我叫..，我今年..岁了，我是.生，我的电话号码是...）
+
+string name="张杰"；
+char gender="男"；
+int age=34;
+string telephonenumber="010-12345";
+console.writeline("我叫{0},我今年{1}岁了,我是{2}生,我的电话号码是{3}",name,gender,age,telephonenumber);
+
+【练习二】
+2、定义两个变量如：number1，number2分别赋值为10和5，写成程序交换两个变量的值（两种方法都掌握）
+
+int number1=10;
+int number2=5;
+int number3;
+number3=number1;
+number1=number2;
+number2=number3;
+console.writeline("number1:{0},number2:{1}",number1,number2);

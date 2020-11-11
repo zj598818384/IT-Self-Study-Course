@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>箭头函数</title>
+    <script type="text/javascript">
+        const numbers=[5,6,13,0,1,18,23];
+        const double=numbers.map(function(number){
+            return number*2;
+        });
+        console.log(double);
+
+        // 转换为箭头函数
+        // (number)：如果存在多个参数则必须写括号，并且用逗号分隔，一个参数就可写可不写
+        // 如果没有参数则也需要保留括号
+        // 显示返回则需要加return
+        // 隐式返回就const double1=numbers.map((number)=>number*2);这样写
+        const double1=numbers.map((number)=>{
+            return number*2;
+        });
+        console.log(double1);
+        //好处
+        // 1.点明了语法
+        // 2.可以隐式返回
+        // 3.不绑定vue
+
+        const greet=name=>{alert(`hello ${name}`)};
+        greet('jelly');
+        console.log(double1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

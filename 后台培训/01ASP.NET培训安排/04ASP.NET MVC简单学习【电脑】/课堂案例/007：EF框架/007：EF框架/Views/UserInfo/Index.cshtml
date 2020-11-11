@@ -1,0 +1,34 @@
+﻿@using _007_EF框架.Models
+@*@model IQueryable<_007_EF框架.Models.UserInfo>*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+                <th>编号</th>
+                <th>账号</th>
+                <th>加密密码</th>
+            </tr>
+            @foreach (var UserInfo in Model)
+            {
+                //var ui = UserInfo as UserInfoViewModel;
+                <tr>
+                    <td>@UserInfo.uid</td>
+                    <td>@UserInfo.username</td>
+                    <td>@UserInfo.password</td>
+                </tr>
+            }
+        </table> 
+    </div>
+</body>
+</html>

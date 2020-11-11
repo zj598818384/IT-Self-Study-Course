@@ -1,0 +1,8 @@
+1、int.tryparse
+尝试着将一个字符串转换成int类型
+
+int number=0;
+bool b=int.tryparse("123abc",out number);
+console.writeline(b);
+console.writeline(number);
+console.readkey();

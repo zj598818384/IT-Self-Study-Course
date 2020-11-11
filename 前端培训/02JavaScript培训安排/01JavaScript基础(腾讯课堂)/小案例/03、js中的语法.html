@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中的语法</title>
+	<script type="text/javascript">
+		/*在js中定义变量，需要使用var关键字
+		在变量没有赋值之前，变量是没有数据类型*/
+
+		//定义空间
+		var a;
+		alert( typeof(a) );//underined
+
+		//给空间赋值
+		a=123;
+		//弹出窗口
+		alert(a);//123
+		/*如果需要知道当前js的某个变量空间的具体类型，
+		需要使用js中的typeof 关键字来测试当前空间的类型*/
+		alert( typeof(a) );//number
+
+		/*由于在js中空间的类型是不确定，因此可以在程序中随时改空间的数据
+		改数据的过程中，甚至可以存储完全不一样的类型*/
+		a="abc";//将一个字符串存放在a空间中
+		alert( typeof(a) );//string
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

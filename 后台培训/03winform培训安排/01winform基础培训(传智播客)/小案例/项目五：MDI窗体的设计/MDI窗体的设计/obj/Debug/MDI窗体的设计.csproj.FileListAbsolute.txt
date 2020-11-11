@@ -1,0 +1,9 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\bin\Debug\MDI窗体的设计.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\bin\Debug\MDI窗体的设计.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\bin\Debug\MDI窗体的设计.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\obj\Debug\MDI窗体的设计.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\obj\Debug\MDI窗体的设计.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\obj\Debug\MDI窗体的设计.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\obj\Debug\MDI窗体的设计.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\obj\Debug\MDI窗体的设计.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目五：MDI窗体的设计\MDI窗体的设计\obj\Debug\MDI窗体的设计.pdb

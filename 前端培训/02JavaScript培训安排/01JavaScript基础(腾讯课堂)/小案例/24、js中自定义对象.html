@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js自定义对象</title>
+</head>
+<body>
+	
+</body>
+	<script type="text/javascript">
+		//在js中自己定义的对象，其实就是函数，函数也就是对象
+		//下面的代码到底当作函数还是当作类似Java中的类使用，
+		//就看在具体调用的时候是直接通过：
+		//1、通过函数名直接调用，那么就是一个普通的函数
+		//2、如果通过new关键字在创建对象，那么它就类似Java中一个类
+		function demo(){}
+		demo();
+		var d=new demo();
+
+		//模拟Java中的类
+		function Person(){}
+
+		var p=new Person();
+		//当在js中通过new关键字创建出某个函数(看成Java中的类对待)的真正的对象之后
+		//即使函数中没有定义任何对象，我们都可以动态给new出来的这个对象上去添加任何的属性和方法
+		
+		p.age=12;
+		p.name="张三";
+		p.setName=function(name)
+		{
+			this.name=name;
+		}
+		p.getName=function()
+		{
+			return this.name;
+		}
+		alert(p.getName());
+		var p2=new Person();
+
+		function Student(name,age)
+		{
+			this.name=name;
+			this.age=age;
+			this.getName=function()
+			{
+				return this.name;
+			}
+			this.setName=function(name)
+			{
+				this.name=name;
+			}
+		}
+		var s=new Student("石榴",48);
+		alert(s.getName());
+		s.setName("动向");
+		alert(s.getName());
+	</script>
+</html>

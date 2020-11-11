@@ -1,0 +1,8 @@
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\bin\Debug\绘制验证码.exe
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\bin\Debug\绘制验证码.pdb
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\obj\Debug\绘制验证码.csprojResolveAssemblyReference.cache
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\obj\Debug\绘制验证码.Form1.resources
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\obj\Debug\绘制验证码.Properties.Resources.resources
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\obj\Debug\绘制验证码.csproj.GenerateResource.Cache
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\obj\Debug\绘制验证码.exe
+E:\自学  项目合集\winform  课程\项目\项目二十二：绘制验证码\绘制验证码\obj\Debug\绘制验证码.pdb

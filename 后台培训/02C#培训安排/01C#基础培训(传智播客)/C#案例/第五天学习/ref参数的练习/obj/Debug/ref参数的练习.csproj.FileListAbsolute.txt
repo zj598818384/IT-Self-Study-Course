@@ -1,0 +1,9 @@
+D:\专业学习\C#\C#示例\第五天学习\ref参数的练习\bin\Debug\ref参数的练习.exe.config
+D:\专业学习\C#\C#示例\第五天学习\ref参数的练习\bin\Debug\ref参数的练习.exe
+D:\专业学习\C#\C#示例\第五天学习\ref参数的练习\bin\Debug\ref参数的练习.pdb
+D:\专业学习\C#\C#示例\第五天学习\ref参数的练习\obj\Debug\ref参数的练习.csprojResolveAssemblyReference.cache
+D:\专业学习\C#\C#示例\第五天学习\ref参数的练习\obj\Debug\ref参数的练习.exe
+D:\专业学习\C#\C#示例\第五天学习\ref参数的练习\obj\Debug\ref参数的练习.pdb
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第五天学习\ref参数的练习\bin\Debug\ref参数的练习.exe.config
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第五天学习\ref参数的练习\obj\Debug\ref参数的练习.exe
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第五天学习\ref参数的练习\obj\Debug\ref参数的练习.pdb

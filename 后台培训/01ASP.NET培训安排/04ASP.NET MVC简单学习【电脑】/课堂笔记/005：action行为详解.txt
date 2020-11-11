@@ -1,0 +1,17 @@
+一、一个行为的本质就是方法
+
+二、返回结果
+返回类型为ActionResult，是一个抽象类，需要返回具体类型的结果对象
+
+三、直接或间接继承自ActionResult的类型
+(1)ViewResult：使用view()可以指定一个页面，也可以指定传递的模型对象，如果没有指定参数则表示返回与Action同名的页面
+(2)ContentResult：使用Content(string content)返回一个原始字符串
+(3)RedirectResult：使用Redirect(string url)将结果转到其他的Action
+(4)JsonResult：使用Json(object data)将data序列化为json数据并返回，JsonRequestBehavior.AllowGet可以处理Get请求，一般结合客户端的ajax请求进行返回，默认只接收post传值方式
+
+
+四、控制器行为
+行为重载：(1)参数不同，(2)请求方式不同，默认为get
+数据的传递与接收：
+传递：支持get、post方式传递
+接收：request["键"]、自动装配

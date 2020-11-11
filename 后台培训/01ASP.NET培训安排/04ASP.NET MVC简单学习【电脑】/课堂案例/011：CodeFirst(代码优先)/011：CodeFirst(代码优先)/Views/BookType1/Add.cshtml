@@ -1,0 +1,22 @@
+﻿@model _011_CodeFirst_代码优先_.Models.BookType1
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("Add", "BookType1", FormMethod.Post))
+        {
+            @Html.TextBoxFor(u=>u.TypeTitle)
+            <input  type="submit" value="添加"/>
+        }
+    </div>
+</body>
+</html>

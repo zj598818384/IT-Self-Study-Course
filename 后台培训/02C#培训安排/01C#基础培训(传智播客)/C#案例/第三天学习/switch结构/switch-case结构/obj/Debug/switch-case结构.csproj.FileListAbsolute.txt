@@ -1,0 +1,9 @@
+D:\专业学习\C#\C#示例\第三天学习\switch结构\switch-case结构\bin\Debug\switch-case结构.exe.config
+D:\专业学习\C#\C#示例\第三天学习\switch结构\switch-case结构\bin\Debug\switch-case结构.exe
+D:\专业学习\C#\C#示例\第三天学习\switch结构\switch-case结构\bin\Debug\switch-case结构.pdb
+D:\专业学习\C#\C#示例\第三天学习\switch结构\switch-case结构\obj\Debug\switch-case结构.csprojResolveAssemblyReference.cache
+D:\专业学习\C#\C#示例\第三天学习\switch结构\switch-case结构\obj\Debug\switch-case结构.exe
+D:\专业学习\C#\C#示例\第三天学习\switch结构\switch-case结构\obj\Debug\switch-case结构.pdb
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第三天学习\switch结构\switch-case结构\bin\Debug\switch-case结构.exe.config
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第三天学习\switch结构\switch-case结构\obj\Debug\switch-case结构.exe
+E:\后台培训\02C#培训安排\01C#基础培训(传智播客)\C#案例\第三天学习\switch结构\switch-case结构\obj\Debug\switch-case结构.pdb

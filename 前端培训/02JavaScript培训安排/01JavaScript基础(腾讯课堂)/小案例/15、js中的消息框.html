@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中的消息框</title>
+	<script type="text/javascript">
+		//警告框，点击确认就结束了
+		alert("123");
+
+		//确认框，弹出的框中会出现两个按钮，
+		//点击确认将返回true，点击取消将返回false
+		//一般放在转账里面
+		var b=confirm("你确定转账吗？");
+		if(b){
+			//当判断成立 说明选择了继续操作的逻辑代码
+			alert("您的钱已经转出");
+		}else{
+			//当判断不成立，说明选择了不再继续进行操作
+			alert("您已取消转账操作");
+		}
+
+		//输入框，给用户一个可以输入的框，当用户输入数据之后，
+		//点击确定按钮，prompt返回输入的值
+		//当用户输入数据或者不输入数据，点击的取消按钮，返回null
+		var pwd=prompt("请输人密码","");
+		alert(pwd);
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

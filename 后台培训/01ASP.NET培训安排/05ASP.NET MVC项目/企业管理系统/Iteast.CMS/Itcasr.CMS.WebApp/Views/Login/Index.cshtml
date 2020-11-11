@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>后台登录界面</title>
+    <script>
+        if(window.parent.window!=window){
+            window.top.location.href = "/Home/CheckLogin";
+        }
+    </script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="title">欢乐购后台管理</p>
+
+            @using (Ajax.BeginForm("UserLogin", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterLogin" }, new { id = "loginForm" }))
+            {
+                <form class="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="label-user">用户名</label>
+                        <input type="text" class="form-control" id="name" placeholder="请输入账号" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="label-pwd">密码</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="请输入密码" name="pwd">
+                    </div>
+
+                    <button type="reset" class="btn btn-info reset">重置</button>
+                    <button type="submit" class="btn btn-info" id="submit">登录</button>
+                </form>
+            }
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+【练习一】
+1、让用户输入姓名，然后显示出这个人上辈子是什么职业。（职业随便写）
+console.writeline("请输入你上辈子的姓名：");
+string name=console.readline();
+switch(name)
+{
+       case "张三":
+                 console.writeline("你上辈子是个好人");
+                 break;
+       case "张三":
+                 console.writeline("你上辈子是个好人");
+                 break;
+       case "张三":
+                 console.writeline("你上辈子是个好人");
+                 break;
+       case "张三":
+                 console.writeline("你上辈子是个好人");
+                 break;
+       default:
+                 console.writeline("你所输入有误");
+                 break;
+}

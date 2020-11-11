@@ -1,0 +1,13 @@
+一、listbox可多选，就表示我们编程时常需要对该控件下的listitem集合进行遍历操作。
+
+二、对Items的删除
+(1)obj.items.Add(obj_ListItem);//添加
+(2)obj.items.Remove(obj_ListItem);//删除一个特定的ListItem
+(3)obj.items.RemoveAt(i);//删除索引号为i的这个项
+
+三、遍历删除选中项的方法
+1、采用for循环，反向遍历。
+2、为什么不能用foreach？
+remove某项之后会使得迭代变量找不到相应的对象，而出错。
+3、正向遍历的问题：
+removeAt(3)，原来的4，到了3的位置，5到了4的位置。接下来检测的是4，即原来的5，这样，原来的4将会被跳过。

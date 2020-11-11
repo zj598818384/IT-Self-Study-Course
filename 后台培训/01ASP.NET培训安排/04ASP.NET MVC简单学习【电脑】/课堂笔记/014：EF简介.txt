@@ -1,0 +1,32 @@
+一、实体框架Entity Framework，简称EF
+
+二、EF是微软退出的基于ADO.Net的数据库访问技术，是一套ORM框架
+(1)底层访问数据库的实质依然是ADO.NET
+(2)是一套ORM框架，即框架中包含了实例模型、数据模型、隐射关系三部分
+
+三、上下文类DbContext：内部封装了ADO.NET操作，用于对数据进行crud
+
+四、子上下文类的属性，其实就是一个集合，可以通过父类中的DbSet<>属性获得，利于编写抽象代码
+
+五、回顾查询语句执行顺序
+(1)from [left_table]
+(2)on <join_condition>
+(3)<join_type> join <right_table>
+(4)where <where_conditon>
+(5)group by <group_by_list>
+(6)with<cube|rollup>
+(7)having<having_condition>
+(8)select
+(9)distinct
+(10)order by <order_by_list>
+(11)<top num><column>
+
+六、分贝使用查询语法、方法语法实现查询
+七、基本查询
+八、但条件、多条件：&&||Contains
+九、连接查询
+十、多from查询(仅查询语法可以使用，结合导航属性使用，比连接查询更简单，查询语法特有)
+十一、部分列查询：匿名对象
+十二、分页查询：Skip、Take(仅lambda，一定要先排序后使用此方法，lambda特有)
+十三、对于一个命令语句，可以将查询语法、方法语法混合使用
+十四、返回值：IQueryable<T>类型

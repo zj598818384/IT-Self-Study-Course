@@ -1,0 +1,8 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\bin\Debug\保存对话框.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\bin\Debug\保存对话框.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\bin\Debug\保存对话框.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\obj\Debug\保存对话框.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\obj\Debug\保存对话框.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\obj\Debug\保存对话框.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\obj\Debug\保存对话框.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目十六：保存对话框\保存对话框\obj\Debug\保存对话框.pdb

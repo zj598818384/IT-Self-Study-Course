@@ -1,0 +1,14 @@
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.DAL.dll.config
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.DAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.DAL.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.IDAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.Models.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\EntityFramework.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.Models.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\BookSystem.IDAL.pdb
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\EntityFramework.xml
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\obj\Debug\BookSystem.DAL.csprojResolveAssemblyReference.cache
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\obj\Debug\BookSystem.DAL.dll
+F:\后台培训\09EntityFramework优化以及高级使用\BookSystem\BookSystem.DAL\obj\Debug\BookSystem.DAL.pdb

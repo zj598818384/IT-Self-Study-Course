@@ -1,0 +1,31 @@
+﻿@model IQueryable<Model.States>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @Html.ActionLink("添加", "Add", "States")
+        <table border="1">
+            <tr>
+                <th>编号</th>
+                <th>内容</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.StatesName</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

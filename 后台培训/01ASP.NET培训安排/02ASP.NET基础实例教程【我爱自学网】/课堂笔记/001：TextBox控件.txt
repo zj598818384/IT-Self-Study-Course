@@ -1,0 +1,31 @@
+一、服务器控件和HTML控件
+1、服务器控件:runat="server";
+2、HTML控件：<input type="text"....runat="server">
+3、调节和设置文本的属性：
+ASP：TextBox.text
+HTML：TextBox.value
+
+二、日期时间型转字符串
+DateTime.now.toString();2019/3/14 15:30:25
+DateTime.now.toLongDataString();2019年3月14日
+DateTime.now.toLongTimeString();15:30:25
+DateTime.now.toShortDateString();2019/3/14
+DateTime.now.toShortTimeString();15:30
+
+三、文本框的多种形式
+1、单行文本框：TextMode="SingleLine"
+2、多行文本框：TextMode="MulitLine";
+3、密码文本框：TextMode="Password";
+
+四、文本框需要掌握的事件
+1、TextChange()：文本框内容发生改变后执行的代码。但是必须是页面被"提交"才执行。
+				 修改文本框内容后，直接回车"提交"设置属性：AutoPostBack=True
+
+五、容器控件Panel
+1、panel呈现形式的理解，我们可以等价于<div>
+最终呈现形式都为：<div></div>
+
+2、但是两者在编程上却截然不同的概念
+panel属于WebControl类
+Div属于LiteralControl类
+Div runat="server" 属于HtmlControl类

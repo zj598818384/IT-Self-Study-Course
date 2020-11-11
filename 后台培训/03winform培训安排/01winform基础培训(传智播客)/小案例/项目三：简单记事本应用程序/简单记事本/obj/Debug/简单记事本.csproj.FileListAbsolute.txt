@@ -1,0 +1,9 @@
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\bin\Debug\简单记事本.exe.config
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\bin\Debug\简单记事本.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\bin\Debug\简单记事本.pdb
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\obj\Debug\简单记事本.csprojResolveAssemblyReference.cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\obj\Debug\简单记事本.Form1.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\obj\Debug\简单记事本.Properties.Resources.resources
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\obj\Debug\简单记事本.csproj.GenerateResource.Cache
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\obj\Debug\简单记事本.exe
+E:\专业学习\自学   Winform开发课程\实例\项目\项目三：简单记事本应用程序\简单记事本\obj\Debug\简单记事本.pdb

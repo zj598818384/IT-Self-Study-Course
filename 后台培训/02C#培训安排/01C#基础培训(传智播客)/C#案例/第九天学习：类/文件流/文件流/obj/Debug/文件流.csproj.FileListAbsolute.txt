@@ -1,0 +1,5 @@
+E:\自学  项目合集\C#  课程\第九天学习：类\文件流\文件流\bin\Debug\文件流.exe
+E:\自学  项目合集\C#  课程\第九天学习：类\文件流\文件流\bin\Debug\文件流.pdb
+E:\自学  项目合集\C#  课程\第九天学习：类\文件流\文件流\obj\Debug\文件流.csprojResolveAssemblyReference.cache
+E:\自学  项目合集\C#  课程\第九天学习：类\文件流\文件流\obj\Debug\文件流.exe
+E:\自学  项目合集\C#  课程\第九天学习：类\文件流\文件流\obj\Debug\文件流.pdb

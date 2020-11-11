@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多线程类", "多线程类\多线程类.csproj", "{A9222614-FD2D-48D6-A661-2B753BCBBBEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "项目十九：多线程", "..\..\..\..\自学   Winform开发课程\实例\项目\项目十九：多线程\项目十九：多线程.csproj", "{2960B098-2E90-467E-9F9D-9B0A746CBD1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9222614-FD2D-48D6-A661-2B753BCBBBEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9222614-FD2D-48D6-A661-2B753BCBBBEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9222614-FD2D-48D6-A661-2B753BCBBBEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9222614-FD2D-48D6-A661-2B753BCBBBEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2960B098-2E90-467E-9F9D-9B0A746CBD1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2960B098-2E90-467E-9F9D-9B0A746CBD1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2960B098-2E90-467E-9F9D-9B0A746CBD1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2960B098-2E90-467E-9F9D-9B0A746CBD1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

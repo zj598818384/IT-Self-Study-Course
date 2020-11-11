@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>do-while循环</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* 
+		 *do-while循环
+		 *
+		 * alert()是将数据以弹窗形式显示在页面上
+		 * document.write()
+		 * document它是浏览器中的一个对象，这个对象不需要书写JS的过程中去new
+		 * 可以直接通过document引用直接使用，在document中有一个write方法，可以将数据写在浏览器上
+		 * 
+		 */
+		// document.write("你好");
+		var a=1;
+		do{
+			if(a%6==0||parseInt(a/10)==6||a%10==6){
+				document.write("<font color='red' size='7'>过</font>")
+			}else{
+				document.write("<font color='yellow' size='3'>"+a+"</font>&nbsp;&nbsp;")
+			}
+			a++;
+		}while(a<=100);
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--pages/demo04/demo04.wxml-->
+<input type="text" bindinput="handInput"/>
+<view>{{num}}</view>
+
+<!-- 
+    1.需要给input标签绑定input事件
+      绑定关键字 bindinput
+    2.如果获取输入框的值
+      通过事件源对象来获取
+      e.datail.value
+    3.把输入框的值赋值到data当中不能直接
+      1 this.data.num=e.detail.value
+      2 this.num=e.detail.value
+      正确的方法：
+      this.setData({
+          num:e.datail.value
+      })
+    4.需要加入一个点击事件
+      1 bindtap
+      2 无法再小程序当中的事件中直接传参
+      3 通过自定义的方式来传递参数
+      4 事件源中获取 自定义属性
+ -->
+
+
+<button bindtap="handtap" data-opretion="{{1}}">+</button>
+<button bindtap="handtap" data-opretion="{{-1}}">-</button>

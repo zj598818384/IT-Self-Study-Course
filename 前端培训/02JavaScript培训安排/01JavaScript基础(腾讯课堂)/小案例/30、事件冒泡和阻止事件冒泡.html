@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件冒泡和阻止事件冒泡</title>
+	<script type="text/javascript">
+		//关于js中的事件冒泡：
+		//标签中嵌套了标签，父标签和子标签上都有对应的事件，在子标签上触发了子标签的事件
+		//会不会导致父标签上的这个事件也执行
+		window.onload=function(){
+			document.getElementById('d1').onclick=function(){
+				alert("外层div");
+			}
+			//当标签上发生了事件之后，会将这个事件传递到指定的方法上
+			document.getElementById('d2').onclick=function(e){
+				alert("内层div");
+				//需要判断不同的浏览器，来阻止事件冒泡
+				//stopPropagation()：它就是阻止事件冒泡(火狐、谷歌浏览器、IE无效)
+				//在JS中有个event的对象，表示就是发生的事件本身。
+				//stopPropagation：终止事件在传播过程的捕获、目标处理或起泡阶段进一步传播。调用该方法后，该节点上处理该事件的处理程序将被调用，事件不再被分派到其他节点。
+				if(e.stopPropagation){
+					//不是IE浏览器的
+					e.stopPropagation();
+				}else{
+					//是IE浏览器
+					e.cancelBubble=true;
+				}
+			}
+			//给a标签上绑定一个事件，在点击的时候询问是否真的需要访问，
+			//如果用户点击了否，am就不访问，这时就不能打开百度
+			document.getElementById('a').onclick=function(e){
+				//阻止标签的默认动作
+				//confirm：显示带有一段消息以及确认按钮和取消按钮的对话框。
+				var con=window.confirm("您确定访问百度吗？");
+				if(!con&&e.preventDefault){
+					e.preventDefault();
+				}
+				else{
+					e.cancelable=false;
+				}
+			}
+		}
+
+	</script>
+	<style type="text/css">
+		.d1{
+			width:200px;
+			height:200px;
+			border:1px solid red;
+			background:#65FF0B;
+		}
+
+		.d2{
+			width:80px;
+			height:80px;
+			background:#0B99FF;
+			margin-left:60px;
+			margin-top:50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="d1" id="d1">
+		<div class="d2" id="d2"></div>
+	</div>
+	<a href="http://www.baidu.com" target="_blank" id="a">百度</a>
+</body>
+</html>

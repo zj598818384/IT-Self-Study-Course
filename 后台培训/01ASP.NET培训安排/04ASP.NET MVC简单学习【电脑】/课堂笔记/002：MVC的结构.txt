@@ -1,0 +1,14 @@
+App_Start：用于存放Global文件中的Application_Start()方法中的那一坨代码，进行封装成类，放到App_Start文件夹中
+
+新建控制器：又击controllers文件夹，添加控制器，命名以Controllers结尾，尽量不要用中文命名，新建的控制器就是一个类，控制器中就是定义方法，方法被称为行为action
+
+
+新建视图：右击控制器中的view()，选择添加视图
+
+MVC完成了行为与页面的解耦，界面可以进行重用
+
+名词：
+控制器：Controller
+行为：action
+视图：view
+路由：route

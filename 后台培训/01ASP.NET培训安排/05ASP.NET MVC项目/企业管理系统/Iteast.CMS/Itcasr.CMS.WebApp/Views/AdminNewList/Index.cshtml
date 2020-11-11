@@ -1,0 +1,201 @@
+﻿
+@{
+    Layout = null;
+}
+@using Itcast.CMS.Model
+@using Itcast.CMS.Common
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/pageBar.css" rel="stylesheet" />
+    <link href="~/Content/tableStyle.css" rel="stylesheet" />
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <script>
+        $(function () {
+            $("#detailDiv").css("display", "none");
+            $("#divAdd").css("display", "none");
+            $(".details").click(function () {
+                showDetail($(this).attr("ids"));//显示详细信息
+            });
+            $(".deletes").click(function () {
+                deleteInfo($(this).attr("ids"), $(this));
+            });
+            //添加信息
+            $("#addInfo").click(function () {
+                //添加方法
+                addNewInfo();
+            });
+        });
+        function addNewInfo() {
+            $("#AddFrame").attr("src", "/AdminNewList/ShowAddInfo");
+            $("#divAdd").css("display", "block");
+            $("#divAdd").dialog({
+                modal: true,
+                //最大化
+                resizeble: true,
+                //最小化
+                maximizable: true,
+                //可重叠
+                collapsible: true,
+                title: "添加新闻",
+                width: 660,
+                height: 400,
+                buttons: [{
+                    text: '确定',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                        //调用子窗体中的方法
+                        //获取子窗体的window对象
+                        var childWindow = $("#AddFrame")[0].contentWindow;
+                        childWindow.subForm();
+                    }
+                }, {
+                    text: '取消',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                        $('#divAdd').dialog('close');
+                    }
+                }]
+            })
+        }
+
+        //添加完成以后调用该方法，关闭添加窗口
+        function afterAdd() {
+            $('#divAdd').dialog('close');
+        }
+
+        //control：表示A标签
+        //删除新闻
+        function deleteInfo(id,control) {
+            $.messager.confirm("提示","确定要删除该记录吗？",function(r){
+                if(r){
+                    //该条件成立表示删除该记录
+                    //发送异步请求
+                    $.post("/AdminNewList/DeleteNewInfo", { "id": id }, function (data) {
+                        if (data == "ok") {
+                            //找到a标签的父级的父级，进行删除操作
+                            $(control).parent().parent().remove();
+                            //提示
+                            $.messager.show({
+                                title:'提示',
+                                msg:'恭喜删除成功!!!',
+                                showType:'show'
+                            })
+                        }
+                        else {
+                            $.messager.alert("提示", "删除失败", "info");
+                        }
+                    });
+                    
+                }
+            })
+        }
+        //显示详细信息
+        function showDetail(id) {
+            $.post("/AdminNewList/GetNewInfoModel", { "id": id }, function (data) {
+                $("#title").text(data.title);
+                $("#author").text(data.author);
+                $("#subdatetime").text(ChangeDateFormat(data.subdatetime));
+                $("#msg").html(data.msg);
+            })
+            $("#detailDiv").css("display", "block");
+            //弹窗
+            $("#detailDiv").dialog({
+                //只有当前窗口可以编辑
+                modal: true,
+                //最大化
+                resizeble: true,
+                //最小化
+                maximizable: true,
+                //可重叠
+                collapsible: true,
+                title: '新闻详细',
+                width: 400,
+                height:300,
+                //按钮
+                buttons: [{
+                    text: '确定',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                        alert('ok');
+                        $('#detailDiv').dialog('close');
+                    }
+                }, {
+                    text: '取消',
+                    handler: function () {
+                        $('#detailDiv').dialog('close');
+                    }
+                }]
+            })
+        }
+
+        //将序列化成json格式后日期(毫秒数)转成日期格式
+        function ChangeDateFormat(cellval) {
+            var date = new Date(parseInt(cellval.replace("/Date(", "").replace(")/", ""), 10));
+            var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+            var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+            return date.getFullYear() + "-" + month + "-" + currentDate;
+        }
+    </script>
+</head>
+<body>
+    <div> 
+        <a href="javascript:void(0)" id="addInfo">添加</a>
+        @if (ViewData["list"] != null)
+        {
+            <table width="100%">
+                <tr>
+                    <th>编号</th>
+                    <th>标题</th>
+                    <th>作者</th>
+                    <th>时间</th>
+                    <th>详细</th>
+                    <th>删除</th>
+                </tr>
+                @foreach (NewInfo newInfo in (List<NewInfo>)ViewData["list"])
+                {
+                    <tr>
+                        <td>@newInfo.id</td>
+                        <td>@newInfo.title</td>
+                        <td>@newInfo.author</td>
+                        <td>@newInfo.subdatetime</td>
+                        <td><a href="javascript:void(0)" class="details" ids="@newInfo.id">详细</a></td>
+                        <td><a href="javascript:void(0)" class="deletes" ids="@newInfo.id">删除</a></td>
+                    </tr>
+                }
+            </table>
+            <p class="page_nav">
+                @* 分页，MvcHtmlString.Create表示对我们输出的内容不会再次编码 *@
+                @MvcHtmlString.Create(PageBar.GetPageBar((int)ViewData["pageIndex"],(int)ViewData["pageCount"]))
+            </p>
+        }
+        else
+        {
+            <span>暂无数据</span>
+        }
+
+    </div>
+
+    @* 显示详细信息内容 *@
+    <div id="detailDiv">
+        <table>
+            <tr><td>标题</td><td><span id="title"></span></td></tr>
+            <tr><td>作者</td><td><span id="author"></span></td></tr>
+            <tr><td>时间</td><td><span id="subdatetime"></span></td></tr>
+            <tr><td>内容</td><td><span id="msg"></span></td></tr>
+        </table>
+    </div>
+
+    @* 添加信息内容 *@
+    <div id="divAdd" style="overflow:hidden">
+        <iframe id="AddFrame" frameborder="0" width="100%" height="100%" scrolling="auto"> </iframe>
+    </div>
+</body>
+</html>

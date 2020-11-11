@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局变量</title>
+</head>
+<body>
+	
+</body>
+	<script type="text/javascript">
+		//URI：统一资源的标识符。URI经常表示的内容就是URL中的某一部分。
+		//URL：统一资源的定位符。
+		//
+		//encodeURI1和decodeURI：它们仅仅只对URI中的非字母、数组、字符号以外的其他内容编码和解码
+		//
+		//encodeURIComponent()和decodeURIComponent()：对URI中除了字母和数字以外的其他任何符号
+		//都进行编码和解码
+		
+		var uri="http://www.baidu.com?username=张三&password=123";
+
+		//编码
+		var endURI=encodeURI(uri);
+		document.write(endURI);
+		document.write("<br/>");
+
+		var deURI=decodeURI(endURI);
+		document.write(deURI);
+		document.write("<br/>");
+
+		var enURI2=encodeURIComponent(uri);
+		document.write(enURI2);
+		document.write("<br/>");
+
+		//eval()：它可以将字符串形式的JS代码，转成真正的js代码并运行
+		var aa="for(var i=0;i<10;i++){document.write(i+',')}"
+		document.write(aa);
+		//eval()：可以将字符串转成js代码执行
+		eval(aa);
+	</script>
+</html>

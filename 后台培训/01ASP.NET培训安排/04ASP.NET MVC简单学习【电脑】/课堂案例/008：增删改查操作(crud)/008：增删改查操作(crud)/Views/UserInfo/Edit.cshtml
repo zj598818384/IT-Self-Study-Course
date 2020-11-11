@@ -1,0 +1,28 @@
+﻿@model _008_增删改查操作_crud_.Models.admin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("Edit", "UserInfo", FormMethod.Post))
+        {
+            <span>用户名：</span>
+            @Model.username
+            @Html.HiddenFor(u=>u.username)
+            <br />
+            <span>密码：</span>
+            @Html.TextBoxFor(u=>u.password)
+            <br />
+            <input type="submit" value="保存" />
+        }
+    </div>
+</body>
+</html>
